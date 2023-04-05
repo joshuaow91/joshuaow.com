@@ -1,9 +1,15 @@
-/** @type {import('tailwindcss').Config} */
-const withMT = require("@material-tailwind/react/utils/withMT");
-export default withMT({
-  content: ["./src/**/*.{html,js}"],
+const flowbite = require('flowbite/plugin');
+
+export default {
+  purge: {
+    content: ['./src/**/*.{js,jsx,ts,tsx}'],
+  },
+  darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {},
   },
-  plugins: [],
-});
+  variants: {
+    extend: {},
+  },
+  plugins: [flowbite],
+};
