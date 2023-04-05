@@ -1,61 +1,87 @@
-import React from "react";
-import { Navbar, Button } from "flowbite-react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithubSquare, faLinkedin, faTwitter, faTwitterSquare } from "@fortawesome/free-brands-svg-icons";
-import { faSquareEnvelope } from "@fortawesome/free-solid-svg-icons";
- 
-const Navigation = () => {
+import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithubSquare, faLinkedin, faTwitterSquare } from '@fortawesome/free-brands-svg-icons';
+import { faSquareEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { GiHamburgerMenu } from 'react-icons/gi';
+import { IoClose } from 'react-icons/io5';
 
+const Navigation = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   return (
-        <Navbar
-  fluid={true}
-  rounded={true}
->
-  <Navbar.Brand href="/">
-    <img
-      src="https://flowbite.com/docs/images/logo.svg"
-      className="mr-3 h-6 sm:h-9"
-      alt="Flowbite Logo"
-    />
-    <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
-      Joshua Ow
-    </span>
-  </Navbar.Brand>
-  <div className="flex items-center md:order-2 space-x-1">
-    <a href="https://www.linkedin.com/in/JoshuaOwDev" target="_blank" rel="noopener noreferrer">
-        <FontAwesomeIcon icon={faLinkedin} />
-    </a>
-    <a href="https://www.twitter.com/JoshuaOwDev" target="_blank" rel="noopener noreferrer">
-        <FontAwesomeIcon icon={faTwitterSquare} />
-    </a>
-    <a href="https://www.github.com//joshuaow91" target="_blank" rel="noopener noreferrer">
-        <FontAwesomeIcon icon={faGithubSquare} />
-    </a>
-    <a href="mailto:joshuaow@gmail.com" target="_blank" rel="noopener noreferrer">
-        <FontAwesomeIcon icon={faSquareEnvelope} />
-    </a>
-    <Navbar.Toggle />
-  </div>
-  <Navbar.Collapse>
-    <Navbar.Link
-      href="/navbars"
-    //   active={true}
-    >
-      About
-    </Navbar.Link>
-    <Navbar.Link href="/navbars">
-      Resume
-    </Navbar.Link>
-    <Navbar.Link href="/navbars">
-      Projects
-    </Navbar.Link>
-    <Navbar.Link href="/navbars">
-      Contact
-    </Navbar.Link>
-  </Navbar.Collapse>
-</Navbar>
-  );
-}
+    <nav className="bg-white">
+      <div className="max-w-7xl mx-auto px-4">
+        <div className="flex justify-between h-16">
+          <div className="flex space-x-7">
+            {/* Hamburger menu */}
+            <div className="md:hidden flex items-center">
+              <button onClick={toggleMenu} className="outline-none mobile-menu-button">
+                {!isMenuOpen ? (
+                  <GiHamburgerMenu className="text-gray-700 w-6 h-6 transition-transform duration-300" />
+                ) : (
+                  <IoClose className="text-gray-700 w-6 h-6 transition-transform duration-300 rotate-180" />
+                )}
+              </button>
+            </div>
 
-export default Navigation;
+            {/* Navbar links */}
+            <div className="hidden md:flex items-center space-x-4">
+              <a href="/navbars" className="text-gray-700 hover:text-gray-900">
+                About
+              </a>
+              <a href="/navbars" className="text-gray-700 hover:text-gray-900">
+                Resume
+              </a>
+              <a href="/navbars" className="text-gray-700 hover:text-gray-900">
+                Projects
+              </a>
+              <a href="/navbars" className="text-gray-700 hover:text-gray-900">
+                Contact
+              </a>
+            </div>
+          </div>
+
+          {/* Social icons */}
+          <div className="flex items-center space-x-1">
+            <a href="https://www.linkedin.com/in/JoshuaOwDev" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faLinkedin} className="text-blue-700 h-6 w-6 hover:text-blue-600" />
+            </a>
+            <a href="https://www.twitter.com/JoshuaOwDev" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faTwitterSquare} className="text-blue-400 w-6 h-6 hover:text-blue-300" />
+            </a>
+            <a href="https://www.github.com//joshuaow91" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faGithubSquare} className="text-gray-900 h-6 w-6 hover:text-gray-600" />
+            </a>
+            <a href="mailto:joshuaow@gmail.com" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faSquareEnvelope} className="text-neutral-400 h-6 w-6 hover:text-neutral-300" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      {/* Mobile menu */}
+      <div className={`md:hidden ${isMenuOpen ? 'block' : 'hidden'}`}>
+        <div className="bg-gray-100">
+          <a href="/navbars" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-200">
+          About
+          </a>
+          <a href="/navbars" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-200">
+            Resume
+          </a>
+          <a href="/navbars" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-200">
+            Projects
+          </a>
+          <a href="/navbars" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-200">
+            Contact
+          </a>
+         </div>
+       </div>
+     </nav>
+  );
+};
+
+export default Navigation;              
