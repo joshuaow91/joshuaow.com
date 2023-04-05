@@ -22,12 +22,19 @@ const Navigation = () => {
       Joshua Ow
     </span>
   </Navbar.Brand>
-  <div className="flex md:order-2 space-x-1">
-    <FontAwesomeIcon icon={faLinkedin} />
-    <FontAwesomeIcon icon={faTwitterSquare} />
-    <FontAwesomeIcon icon={faGithubSquare} />
-    <FontAwesomeIcon icon={faSquareEnvelope} />
-
+  <div className="flex items-center md:order-2 space-x-1">
+    <a href="https://www.linkedin.com/in/JoshuaOwDev" target="_blank" rel="noopener noreferrer">
+        <FontAwesomeIcon icon={faLinkedin} />
+    </a>
+    <a href="https://www.twitter.com/JoshuaOwDev" target="_blank" rel="noopener noreferrer">
+        <FontAwesomeIcon icon={faTwitterSquare} />
+    </a>
+    <a href="https://www.github.com//joshuaow91" target="_blank" rel="noopener noreferrer">
+        <FontAwesomeIcon icon={faGithubSquare} />
+    </a>
+    <a href="mailto:joshuaow@gmail.com" target="_blank" rel="noopener noreferrer">
+        <FontAwesomeIcon icon={faSquareEnvelope} />
+    </a>
     <Navbar.Toggle />
   </div>
   <Navbar.Collapse>
