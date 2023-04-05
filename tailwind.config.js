@@ -20,6 +20,9 @@ export default {
           warning: "#EE8133",
           error: "#E93F33",
         },
+        fontFamily: {
+          'poppins': ['Poppins', 'sans-serif']
+        }
       },
     },
   },

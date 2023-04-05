@@ -13,7 +13,7 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="bg-white">
+    <nav className="bg-white font-poppins">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between h-16">
           <div className="flex space-x-7">
