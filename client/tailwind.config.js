@@ -1,9 +1,8 @@
 const flowbite = require('flowbite/plugin');
 
 export default {
-  purge: {
-    content: ['./src/**/*.{js,jsx,ts,tsx}'],
-  },
+
+  content: ['./src/**/*.{js,jsx,ts,tsx}'],
   darkMode: 'class', // or 'media' or 'class'
   theme: {
     fontFamily: {
