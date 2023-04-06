@@ -23,7 +23,7 @@ const Hero = () => {
               <FontAwesomeIcon icon={faSquareEnvelope} className="text-pink-400 h-6 w-6 hover:text-pink-300" />
             </a>
           </div>
-            <button>
+            <button className='text-left'>
                 Learn more
             </button>
         </div>

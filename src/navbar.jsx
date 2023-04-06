@@ -13,7 +13,7 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="bg-white font-montserrat uppercase font-medium shadow-lg shadow-slate-800 text-sm ">
+    <nav className="bg-white font-montserrat uppercase font-medium shadow-xl shadow-slate-950 text-sm ">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between h-16">
           <div className="flex space-x-7">
