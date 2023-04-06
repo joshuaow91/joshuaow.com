@@ -1,7 +1,4 @@
 import React, { useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithubSquare, faLinkedin, faTwitterSquare } from '@fortawesome/free-brands-svg-icons';
-import { faSquareEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { IoClose } from 'react-icons/io5';
 
@@ -13,9 +10,9 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="bg-white font-montserrat uppercase font-medium shadow-xl shadow-slate-950 text-sm ">
+    <nav className="bg-white font-montserrat uppercase font-medium text-sm fixed top-0 w-full z-10">
       <div className="max-w-7xl mx-auto px-4">
-        <div className="flex justify-between h-16">
+        <div className="flex justify-end h-16">
           <div className="flex space-x-7">
             {/* Hamburger menu */}
             <div className="md:hidden flex items-center">

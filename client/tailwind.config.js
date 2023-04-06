@@ -1,5 +1,3 @@
-const flowbite = require('flowbite/plugin');
-
 export default {
 
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
@@ -28,5 +26,5 @@ export default {
   variants: {
     extend: {},
   },
-  plugins: [flowbite],
+  plugins: [],
 };
