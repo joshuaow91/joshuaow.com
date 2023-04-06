@@ -13,7 +13,7 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="bg-white">
+    <nav className="bg-white font-montserrat uppercase font-medium shadow-xl shadow-slate-950 text-sm ">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between h-16">
           <div className="flex space-x-7">
@@ -46,7 +46,7 @@ const Navigation = () => {
           </div>
 
           {/* Social icons */}
-          <div className="flex items-center space-x-1">
+          {/* <div className="flex items-center space-x-1">
             <a href="https://www.linkedin.com/in/JoshuaOwDev" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faLinkedin} className="text-blue-700 h-6 w-6 hover:text-blue-600" />
             </a>
@@ -59,7 +59,7 @@ const Navigation = () => {
             <a href="mailto:joshuaow@gmail.com" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faSquareEnvelope} className="text-neutral-400 h-6 w-6 hover:text-neutral-300" />
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
 

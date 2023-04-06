@@ -7,7 +7,7 @@ export default {
   darkMode: 'class', // or 'media' or 'class'
   theme: {
     fontFamily: {
-      'poppins': ['Poppins', 'sans-serif']
+      'montserrat': ['Montserrat', 'sans-serif']
     },
     extend: {
       // Add your custom theme colors here
