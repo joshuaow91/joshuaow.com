@@ -6,32 +6,30 @@ import { faSquareEnvelope } from '@fortawesome/free-solid-svg-icons';
 const Hero = () => {
 
     return (
-        <div className=' bg-neutral-100 flex flex-col p-20 text-white'>
-          <div className=' flex flex-col'>
-            <span className='text-xs text-slate-800 font-extralight'>Hello, I'm</span>
-            <span className='text-5xl font-extrabold text-slate-800'>JOSHUA OW</span>
-            <span className='text-lg font-thin text-slate-800'>SOFTWARE ENGINEER</span>
-            <div className="inline-flex">
-              <button className="py-2 px-4 my-4 bg-pink-500 hover:bg-pink-600 font-montserrat text-xs rounded hover:scale-105 ease-in duration-300">
+          <div className=' flex-1  justify-start w-1/3 flex-col mt-20 ml-20 py-20 h-15 '>
+            <p className='text-md text-black font-light tracking-wider dark:text-white'>Hello, I'm</p>
+            <h1 className='text-5xl font-extrabold text-black tracking-tighter dark:text-white'>JOSHUA OW</h1>
+            <p className='text-lg font-light text-darkBlack tracking-widest dark:text-white'>FULL-STACK SOFTWARE ENGINEER</p>
+            <div className="inline-flex justify-center">
+              <button className="py-2.5 px-4 my-4 text-neutral-50 bg-gradient-to-r from-pink-500 via-pink-500 to-pink-600 font-montserrat text-xs rounded hover:scale-105 ease-in-out duration-300">
                 Download Resume
               </button>
             </div>
-          </div>
-            <div className="flex items-center space-x-1">
+            <div className="space-x-4 justify-center">
             <a href="https://www.linkedin.com/in/JoshuaOwDev" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faLinkedin} className="h-6 w-6 text-lime-400 hover:text-lime-500 " />
-            </a>
-            <a href="https://www.twitter.com/JoshuaOwDev" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faTwitterSquare} className="h-6 w-6 text-lime-400 hover:text-lime-500" />
+              <FontAwesomeIcon icon={faLinkedin} className="h-6 w-6 text-cyan-500 hover:text-cyan-600 " />
             </a>
             <a href="https://www.github.com//joshuaow91" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faGithubSquare} className="h-6 w-6 text-lime-400 hover:text-lime-500" />
+              <FontAwesomeIcon icon={faGithubSquare} className="h-6 w-6 text-cyan-500 hover:text-cyan-600" />
+            </a>
+            <a href="https://www.twitter.com/JoshuaOwDev" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faTwitterSquare} className="h-6 w-6 text-cyan-500 hover:text-cyan-600" />
             </a>
             <a href="mailto:joshuaow@gmail.com" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faSquareEnvelope} className="h-6 w-6 text-lime-400 hover:text-lime-500" />
+              <FontAwesomeIcon icon={faSquareEnvelope} className="h-6 w-6 text-cyan-500 hover:text-cyan-600" />
             </a>
           </div>
-        </div>
+          </div>
     )
 }
 

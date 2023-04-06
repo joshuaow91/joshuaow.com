@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { IoClose } from 'react-icons/io5';
+import Toggle from './ModeToggle';
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,7 +11,7 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="bg-white font-montserrat uppercase font-medium text-sm fixed top-0 w-full z-10">
+    <nav className=" bg-white font-montserrat lowercase text-md fixed top-0 w-full z-10 shadow-lg shadow-gray-200 dark:bg-blacker dark:shadow-none ">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-end h-16">
           <div className="flex space-x-7">
@@ -27,38 +28,26 @@ const Navigation = () => {
 
             {/* Navbar links */}
             <div className="hidden md:flex items-center space-x-4">
-              <a href="/navbars" className="text-gray-700 hover:text-gray-900">
+              <a href="/navbars" className="text-gray-700 hover:text-gray-900 dark:text-white">
                 About
               </a>
-              <a href="/navbars" className="text-gray-700 hover:text-gray-900">
+              <a href="/navbars" className="text-gray-700 hover:text-gray-900 dark:text-white">
                 Resume
               </a>
-              <a href="/navbars" className="text-gray-700 hover:text-gray-900">
+              <a href="/navbars" className="text-gray-700 hover:text-gray-900 dark:text-white">
                 Projects
               </a>
-              <a href="/navbars" className="text-gray-700 hover:text-gray-900">
+              <a href="/navbars" className="text-gray-700 hover:text-gray-900 dark:text-white">
                 Contact
               </a>
+
+               <Toggle/>
             </div>
           </div>
-
-          {/* Social icons */}
-          {/* <div className="flex items-center space-x-1">
-            <a href="https://www.linkedin.com/in/JoshuaOwDev" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faLinkedin} className="text-blue-700 h-6 w-6 hover:text-blue-600" />
-            </a>
-            <a href="https://www.twitter.com/JoshuaOwDev" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faTwitterSquare} className="text-blue-400 w-6 h-6 hover:text-blue-300" />
-            </a>
-            <a href="https://www.github.com//joshuaow91" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faGithubSquare} className="text-gray-900 h-6 w-6 hover:text-gray-600" />
-            </a>
-            <a href="mailto:joshuaow@gmail.com" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faSquareEnvelope} className="text-neutral-400 h-6 w-6 hover:text-neutral-300" />
-            </a>
-          </div> */}
         </div>
       </div>
+
+
 
       {/* Mobile menu */}
       <div className={`md:hidden ${isMenuOpen ? 'block' : 'hidden'}`}>
