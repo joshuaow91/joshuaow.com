@@ -6,6 +6,9 @@ export default {
   },
   darkMode: 'class', // or 'media' or 'class'
   theme: {
+    fontFamily: {
+      'poppins': ['Poppins', 'sans-serif']
+    },
     extend: {
       // Add your custom theme colors here
       backgroundColor: {
