@@ -28,16 +28,16 @@ const Navigation = () => {
 
             {/* Navbar links */}
             <div className="hidden md:flex items-center space-x-4">
-              <a href="/navbars" className="text-gray-700 hover:text-gray-900 dark:text-white">
+              <a href="/navbars" className="text-gray-700 hover:text-gray-950 dark:text-white dark:hover:text-neutral-300">
                 About
               </a>
-              <a href="/navbars" className="text-gray-700 hover:text-gray-900 dark:text-white">
+              <a href="/navbars" className="text-gray-700 hover:text-gray-950 dark:text-white dark:hover:text-neutral-300">
                 Resume
               </a>
-              <a href="/navbars" className="text-gray-700 hover:text-gray-900 dark:text-white">
+              <a href="/navbars" className="text-gray-700 hover:text-gray-950 dark:text-white dark:hover:text-neutral-300">
                 Projects
               </a>
-              <a href="/navbars" className="text-gray-700 hover:text-gray-900 dark:text-white">
+              <a href="/navbars" className="text-gray-700 hover:text-gray-950 dark:text-white dark:hover:text-neutral-300">
                 Contact
               </a>
 
