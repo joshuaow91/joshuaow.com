@@ -1,12 +1,11 @@
 export default {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
-  darkMode: 'class', // or 'media' or 'class'
+  darkMode: 'class', 
   theme: {
     fontFamily: {
       'montserrat': ['Montserrat', 'sans-serif'],
     },
     extend: {
-      // Add your custom theme colors here
       colors: {
         mytheme: {
           primary: "#45AEEE",
