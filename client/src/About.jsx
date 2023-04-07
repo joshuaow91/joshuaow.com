@@ -17,6 +17,12 @@ import React from "react"
       ]
 
     return (
+        <div className="relative pt-10">
+        <div className="absolute top-0 right-10 flex gap-10 z-10">
+        <div className=" bg-white h-52 w-52 p-20 rounded-md drop-shadow-md shadow-black">img</div>
+        <div className=" bg-white h-20 w-20 p-20 rounded-md drop-shadow-md shadow-black">img</div>
+        <div className=" bg-white h-20 w-20 p-20 rounded-md drop-shadow-md shadow-black">img</div>
+        </div>
       <div className="relative isolate overflow-hidden bg-cyan-600 py-24 sm:py-32 skew-container font-montserrat ">
         <div className="mx-auto max-w-7xl px-6 lg:px-8 unskew-child">
           <div className="mx-auto max-w-2xl lg:mx-0">
@@ -43,6 +49,7 @@ import React from "react"
             </dl>
           </div>
         </div>
+      </div>
       </div>
     )
   }

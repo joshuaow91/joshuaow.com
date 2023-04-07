@@ -18,7 +18,7 @@ const Navigation = () => {
   
 
   return (
-    <nav className="flex bg-white font-montserrat lowercase text-md fixed top-0 w-full z-10 shadow-lg shadow-gray-200 dark:bg-blacker dark:shadow-none ">
+    <nav className=" bg-white font-montserrat lowercase text-md fixed top-0 w-full z-10 shadow-lg shadow-gray-200 dark:bg-blacker dark:shadow-none">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-end h-16">
           <div className="flex space-x-7">
