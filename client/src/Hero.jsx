@@ -6,7 +6,7 @@ import TimelineComp from './Timeline';
 
 const Hero = () => {
   return (
-    <div className="grid grid-cols-2 gap-x-10">
+    <div className="flex gap-x-40">
       <div className="">
         <p className="text-md text-black font-light tracking-wider dark:text-white">Hello, I'm</p>
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-black tracking-tighter dark:text-white">JOSHUA OW</h1>
@@ -38,9 +38,6 @@ const Hero = () => {
             </a>
           </li>
         </ul>
-      </div>
-      <div className="" id='projects-section'>
-        <TimelineComp />
       </div>
     </div>
   );

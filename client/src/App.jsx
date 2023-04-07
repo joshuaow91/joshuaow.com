@@ -3,6 +3,7 @@ import Navigation from './navbar'
 import './index.css'
 import Hero from './Hero'
 import About from './About'
+import TimelineComp from './Timeline'
 
 
 function App() {
@@ -12,12 +13,15 @@ function App() {
       <div className=''>
         <Navigation/>
       </div>
-      <div className='flex gap-20 p-20 mt-20 mx-auto'> 
+      <div className='flex p-20 mt-20 '> 
         <Hero />
       </div>
       <div>
         {/* <Footer /> */}
         <About />
+      </div>
+      <div className=" p-20" id='projects-section'>
+        <TimelineComp />
       </div>
     </div>
   )
