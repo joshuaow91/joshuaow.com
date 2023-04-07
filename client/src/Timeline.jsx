@@ -8,21 +8,21 @@ const TimelineComp = () => {
   const timelineItems = [
     {
       title: "orderly",
-      label: "latest",
+      label: "Team Project",
       description:
         "inventory automation",
       img: '/src/assets/orderly.png' 
     },
     {
         title: "project",
-        label: "title",
+        label: "Individual",
         description:
           "description",
         img: '/src/assets/img.png'
       },
       {
         title: "project",
-        label: "title",
+        label: "Individual",
         description:
           "description",
         img: '/src/assets/img.png'

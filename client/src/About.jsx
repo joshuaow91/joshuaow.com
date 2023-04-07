@@ -24,10 +24,10 @@ import { faHtml5, faCss3, faJs, faReact, faNodeJs } from "@fortawesome/free-bran
 
     return (
         <>
-        <h1 className="flex justify-end pr-10 pb-5 mr-20 text-4xl font-montserrat uppercase font-bold text-black dark:text-white" id="about">about</h1>
+        <h1 className="flex justify-end pr-10 pb-5 mr-20 text-4xl font-montserrat uppercase font-bold text-black dark:text-white" id="about">about me</h1>
         <div className="relative pt-20">
         <div className="absolute top-0 right-0 flex gap-10 z-10 justify-end mr-20">
-        <div className=" bg-white dark:bg-blacker w-1/2 p-5 rounded-md drop-shadow-md shadow-black">
+        <div className=" bg-white dark:bg-blacker w-1/2 p-5 rounded-md drop-shadow-lg shadow-black">
             <img src='/src/assets/self.jpg'className='rounded-lg w-1/3 float-right saturate-50 '/>
             <p className="font-montserrat text-md text-black dark:text-white">
                 Hi there! I'm a passionate software engineer who loves to code. Ever since I started my coding journey, 
@@ -41,7 +41,7 @@ import { faHtml5, faCss3, faJs, faReact, faNodeJs } from "@fortawesome/free-bran
       <div className="relative isolate overflow-hidden bg-cyan-600 dark:bg-blacker py-24 px-10 sm:py-32 skew-container font-montserrat ">
         <div className="mx-auto max-w-7xl px-6 lg:px-8 unskew-child">
           <div className="mx-auto max-w-2xl lg:mx-0 mt-20">
-            <h2 className="text-4xl font-bold tracking-tight text-white sm:text-4xl uppercase">Skillsets</h2>
+            <h2 className="text-4xl font-bold tracking-tight text-white sm:text-4xl uppercase">My Skillsets</h2>
             <p className="mt-6 text-md leading-8 text-gray-300">
                 As a versatile web developer, I possess a wide range of skills that enable me to create visually appealing and 
                 highly functional web applications. My skill sets include, but are not limited to:
