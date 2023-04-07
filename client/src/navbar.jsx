@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { IoClose } from 'react-icons/io5';
 import Toggle from './ModeToggle';
+import { Link } from 'react-scroll';
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -9,6 +10,12 @@ const Navigation = () => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
+  const scrollToProjects = () => {
+    const projectsSection = document.getElementById("projects-section");
+    projectsSection.scrollIntoView({ behavior: "smooth" });
+  };
+  
 
   return (
     <nav className=" bg-white font-montserrat lowercase text-md fixed top-0 w-full z-10 shadow-lg shadow-gray-200 dark:bg-blacker dark:shadow-none ">
@@ -34,9 +41,16 @@ const Navigation = () => {
               <a href="/navbars" className="text-gray-700 hover:text-gray-950 dark:text-white dark:hover:text-neutral-300">
                 Resume
               </a>
-              <a href="/navbars" className="text-gray-700 hover:text-gray-950 dark:text-white dark:hover:text-neutral-300">
+              <Link
+                to="projects-section"
+                smooth={true}
+                duration={500}
+                spy={true}
+                offset={-50}
+                className='text-gray-700 hover:text-gray-950 dark:text-white dark:hover:text-neutral-300 hover:cursor-pointer'
+              >
                 Projects
-              </a>
+              </Link>
               <a href="/navbars" className="text-gray-700 hover:text-gray-950 dark:text-white dark:hover:text-neutral-300">
                 Contact
               </a>
