@@ -7,11 +7,6 @@
     box-sizing: border-box;
 }
 
-
-
-
-  
-  /* Add this to your CSS file */
 .skew-container {
     transform: skewY(-4deg);
   }
@@ -20,3 +15,10 @@
     transform: skewY(4deg);
   }
   
+
+
+
+
+
+
+

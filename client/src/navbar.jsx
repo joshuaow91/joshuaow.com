@@ -16,12 +16,13 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-end h-16">
           <div className="flex space-x-7">
+            <div className='md:hidden mt-5'><Toggle/></div>
             <div className="md:hidden flex items-center">
-              <button onClick={toggleMenu} className="outline-none mobile-menu-button">
+              <button onClick={toggleMenu} className="outline-none ">
                 {!isMenuOpen ? (
-                  <GiHamburgerMenu className="text-gray-700 w-6 h-6 transition-transform duration-300" />
+                  <GiHamburgerMenu className="text-gray-700 w-6 h-6" />
                 ) : (
-                  <IoClose className="text-gray-700 w-6 h-6 transition-transform duration-300 rotate-180 " />
+                  <IoClose className="text-gray-700 w-6 h-6 " />
                 )}
               </button>
             </div>

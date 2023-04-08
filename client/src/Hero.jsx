@@ -2,7 +2,6 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithubSquare, faLinkedin, faTwitterSquare } from '@fortawesome/free-brands-svg-icons';
 import { faSquareEnvelope } from '@fortawesome/free-solid-svg-icons';
-import TimelineComp from './Timeline';
 
 const Hero = () => {
   return (

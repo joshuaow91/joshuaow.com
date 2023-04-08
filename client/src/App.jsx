@@ -3,7 +3,8 @@ import Navigation from './navbar'
 import './index.css'
 import Hero from './Hero'
 import About from './About'
-import TimelineComp from './Timeline'
+import Projects from './Projects'
+import Contact from './Contact'
 
 
 function App() {
@@ -20,8 +21,11 @@ function App() {
         {/* <Footer /> */}
         <About />
       </div>
-      <div className=" p-20" id='projects-section'>
-        <TimelineComp />
+      <div className=" p-20 mb-10" id='projects-section'>
+        <Projects />
+      </div>
+      <div className=''>
+        <Contact />
       </div>
     </div>
   )

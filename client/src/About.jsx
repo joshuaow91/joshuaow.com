@@ -24,7 +24,7 @@ import { faHtml5, faCss3, faJs, faReact, faNodeJs } from "@fortawesome/free-bran
 
     return (
         <>
-        <h1 className="flex justify-end pr-10 pb-5 md:mr-20 text-4xl font-montserrat uppercase font-bold text-black dark:text-white" id="about">about me</h1>
+        <h1 className="flex justify-end pr-10 pb-5 md:mr-20 text-4xl font-montserrat tracking-tight uppercase font-bold text-black dark:text-white" id="about">about me</h1>
         <div className="relative pt-20">
         <div className="absolute top-0 right-0 p-5 md:p-0 flex gap-10 z-10 justify-end md:mr-20">
         <div className=" bg-white dark:bg-blacker md:w-1/2 p-5 rounded-md drop-shadow-lg shadow-black">
@@ -38,8 +38,8 @@ import { faHtml5, faCss3, faJs, faReact, faNodeJs } from "@fortawesome/free-bran
         {/* <div className=" bg-white dark:bg-black h-52 w-52 p-20 rounded-md drop-shadow-md shadow-black">img</div>
         <div className=" bg-white dark:bg-black h-52 w-52 p-20 rounded-md drop-shadow-md shadow-black">img</div> */}
         </div>
-      <div className="relative isolate overflow-hidden bg-cyan-600 dark:bg-blacker py-24 px-5 md:px-10 sm:py-32 skew-container font-montserrat mt-28 md:mt-0 ">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8 unskew-child">
+      <div className="relative isolate overflow-hidden bg-cyan-600 dark:bg-blacker py-24 px-5 md:px-10 sm:py-32 transform -skew-y-6 font-montserrat mt-28 md:mt-0 ">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8 transform skew-y-6">
           <div className="mx-auto max-w-2xl lg:mx-0 mt-20">
             <h2 className="text-4xl font-bold tracking-tight text-white sm:text-4xl uppercase">My Skillsets</h2>
             <p className="mt-6 text-md leading-8 text-gray-300">
