@@ -2,10 +2,6 @@ import React from "react";
 
 const Contact = () => {
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        // Handle form submission
-      };
 
     return (
         <div className="bg-white dark:bg-blackest ">
@@ -17,14 +13,15 @@ const Contact = () => {
             I'd love to hear from you! If you have any questions, project inquiries, or would like to collaborate, 
             feel free to reach out. I'll get back to you as soon as I can.
             </p>
-            <form onSubmit={handleSubmit} className="space-y-8">
+            <form action="https://getform.io/f/34e9ede6-3748-4b34-92f2-2bc5b6917711" method="POST" className="space-y-8">
                 <div>
                 <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
                     Your email
                 </label>
+                <input type="hidden" name="_gotcha" className='none'></input>
                 <input
                     type="email"
-                    id="email"
+                    name="email"
                     className="drop-shadow-md bg-gray-50 border border-gray-300 outline-pink-500 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-black dark:border-darkBlack dark:placeholder-gray-200 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
                     placeholder="name@domain.com"
                     required
@@ -36,7 +33,7 @@ const Contact = () => {
                 </label>
                 <input
                     type="text"
-                    id="subject"
+                    name="subject"
                     className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 outline-pink-500 drop-shadow-md focus:ring-pink-500 focus:border-primary-500 dark:bg-black dark:border-darkBlack dark:placeholder-gray-200 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
                     placeholder="How can I help you?"
                     required
@@ -47,7 +44,7 @@ const Contact = () => {
                     Your message
                 </label>
                 <textarea
-                    id="message"
+                    name="message"
                     rows="6"
                     className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg drop-shadow-md border border-gray-300 outline-pink-500 focus:ring-primary-500 focus:border-none dark:bg-black dark:border-darkBlack dark:placeholder-gray-200 dark:text-white dark:focus:ring-primary-500 dark:focus:border-none"
                     placeholder="Share your thoughts, ideas, or questions..."
