@@ -28,6 +28,16 @@ const Navigation = () => {
             </div>
             <div className="hidden md:flex items-center space-x-4">
               <Link
+                to="home"
+                smooth={true}
+                duration={500}
+                spy={true}
+                offset={-50}
+                className='text-gray-700 hover:text-gray-950 dark:text-white dark:hover:text-neutral-300 hover:cursor-pointer'
+              >
+                home
+              </Link>
+              <Link
                 to="about"
                 smooth={true}
                 duration={500}
@@ -37,9 +47,9 @@ const Navigation = () => {
               >
                 about
               </Link>
-              <a href="/navbars" className="text-gray-700 hover:text-gray-950 dark:text-white dark:hover:text-neutral-300">
+              {/* <a href="/navbars" className="text-gray-700 hover:text-gray-950 dark:text-white dark:hover:text-neutral-300">
                 Resume
-              </a>
+              </a> */}
               <Link
                 to="projects-section"
                 smooth={true}
@@ -50,9 +60,16 @@ const Navigation = () => {
               >
                 Projects
               </Link>
-              <a href="/navbars" className="text-gray-700 hover:text-gray-950 dark:text-white dark:hover:text-neutral-300">
-                Contact
-              </a>
+              <Link
+                to="contact"
+                smooth={true}
+                duration={500}
+                spy={true}
+                offset={-50}
+                className='text-gray-700 hover:text-gray-950 dark:text-white dark:hover:text-neutral-300 hover:cursor-pointer'
+              >
+                contact
+              </Link>
                <Toggle/>
             </div>
           </div>
@@ -61,18 +78,49 @@ const Navigation = () => {
 
       <div className={`md:hidden ${isMenuOpen ? 'block' : 'hidden'}`}>
         <div className="bg-gray-100">
-          <a href="/navbars" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-200">
-          About
-          </a>
-          <a href="/navbars" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-200">
-            Resume
-          </a>
-          <a href="/navbars" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-200">
-            Projects
-          </a>
-          <a href="/navbars" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-200">
-            Contact
-          </a>
+              <Link
+                to="home"
+                smooth={true}
+                duration={500}
+                spy={true}
+                offset={-50}
+                className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-200"
+              >
+                home
+              </Link>
+              <Link
+                to="about"
+                smooth={true}
+                duration={500}
+                spy={true}
+                offset={-50}
+                className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-200"
+              >
+                about
+              </Link>
+              {/* <a href="/navbars" className="text-gray-700 hover:text-gray-950 dark:text-white dark:hover:text-neutral-300">
+                Resume
+              </a> */}
+              <Link
+                to="projects-section"
+                smooth={true}
+                duration={500}
+                spy={true}
+                offset={-50}
+                className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-200"
+              >
+                Projects
+              </Link>
+              <Link
+                to="contact"
+                smooth={true}
+                duration={500}
+                spy={true}
+                offset={-50}
+                className="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-200"
+              >
+                contact
+              </Link>
          </div>
        </div>
      </nav>
