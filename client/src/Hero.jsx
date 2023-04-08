@@ -2,14 +2,13 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithubSquare, faLinkedin, faTwitterSquare } from '@fortawesome/free-brands-svg-icons';
 import { faSquareEnvelope } from '@fortawesome/free-solid-svg-icons';
-import TimelineComp from './Timeline';
 
 const Hero = () => {
   return (
-    <div className="grid grid-cols-2 gap-x-10">
+    <div className="flex gap-x-40">
       <div className="">
         <p className="text-md text-black font-light tracking-wider dark:text-white">Hello, I'm</p>
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-black tracking-tighter dark:text-white">JOSHUA OW</h1>
+        <h1 className="text-5xl md:text-6xl lg:text-6xl font-extrabold text-black tracking-tighter dark:text-white">JOSHUA OW</h1>
         <p className="text-lg font-light text-darkBlack tracking-widest dark:text-white">FULL-STACK SOFTWARE ENGINEER</p>
 
         <button className="py-2.5 px-4 my-4 text-neutral-50 bg-gradient-to-r from-pink-500 via-pink-500 to-pink-600 font-montserrat text-xs rounded hover:scale-105 ease-in-out duration-300">
@@ -38,9 +37,6 @@ const Hero = () => {
             </a>
           </li>
         </ul>
-      </div>
-      <div className="" id='projects-section'>
-        <TimelineComp />
       </div>
     </div>
   );

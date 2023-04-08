@@ -3,6 +3,8 @@ import Navigation from './navbar'
 import './index.css'
 import Hero from './Hero'
 import About from './About'
+import Projects from './Projects'
+import Contact from './Contact'
 
 
 function App() {
@@ -12,12 +14,18 @@ function App() {
       <div className=''>
         <Navigation/>
       </div>
-      <div className='flex gap-20 p-20 mt-20 mx-auto'> 
+      <div className='flex p-10 md:p-20 mt-20 mb-20 md:mb-0 '> 
         <Hero />
       </div>
       <div>
         {/* <Footer /> */}
         <About />
+      </div>
+      <div className=" p-20 mb-10" id='projects-section'>
+        <Projects />
+      </div>
+      <div className=''>
+        <Contact />
       </div>
     </div>
   )

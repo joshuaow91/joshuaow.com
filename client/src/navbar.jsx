@@ -11,30 +11,32 @@ const Navigation = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const scrollToProjects = () => {
-    const projectsSection = document.getElementById("projects-section");
-    projectsSection.scrollIntoView({ behavior: "smooth" });
-  };
-  
-
   return (
-    <nav className=" bg-white font-montserrat lowercase text-md fixed top-0 w-full z-10 shadow-lg shadow-gray-200 dark:bg-blacker dark:shadow-none">
+    <nav className=" bg-white font-montserrat lowercase text-md fixed top-0 w-full drop-shadow-lg shadow-black dark:bg-blacker dark:shadow-none z-20">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-end h-16">
           <div className="flex space-x-7">
+            <div className='md:hidden mt-5'><Toggle/></div>
             <div className="md:hidden flex items-center">
-              <button onClick={toggleMenu} className="outline-none mobile-menu-button">
+              <button onClick={toggleMenu} className="outline-none ">
                 {!isMenuOpen ? (
-                  <GiHamburgerMenu className="text-gray-700 w-6 h-6 transition-transform duration-300" />
+                  <GiHamburgerMenu className="text-gray-700 w-6 h-6" />
                 ) : (
-                  <IoClose className="text-gray-700 w-6 h-6 transition-transform duration-300 rotate-180 " />
+                  <IoClose className="text-gray-700 w-6 h-6 " />
                 )}
               </button>
             </div>
             <div className="hidden md:flex items-center space-x-4">
-              <a href="/navbars" className="text-gray-700 hover:text-gray-950 dark:text-white dark:hover:text-neutral-300">
-                About
-              </a>
+              <Link
+                to="about"
+                smooth={true}
+                duration={500}
+                spy={true}
+                offset={-50}
+                className='text-gray-700 hover:text-gray-950 dark:text-white dark:hover:text-neutral-300 hover:cursor-pointer'
+              >
+                about
+              </Link>
               <a href="/navbars" className="text-gray-700 hover:text-gray-950 dark:text-white dark:hover:text-neutral-300">
                 Resume
               </a>
