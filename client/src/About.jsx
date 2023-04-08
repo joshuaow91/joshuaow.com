@@ -1,16 +1,14 @@
 import React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHtml5, faCss3, faJs, faReact, faNodeJs } from "@fortawesome/free-brands-svg-icons";
-
+import { Link } from "react-scroll";
 
   
   const About = () => {
 
     const links = [
-        { name: 'links', href: '#' },
-        { name: 'links', href: '#' },
-        { name: 'links', href: '#' },
-        { name: 'links', href: '#' },
+        { name: 'projects', id: 'projects-section' },
+        { name: 'contact', id: 'contact' },
       ]
       const stats = [
         { name: 'HTML', icon: faHtml5 },
@@ -27,16 +25,14 @@ import { faHtml5, faCss3, faJs, faReact, faNodeJs } from "@fortawesome/free-bran
         <h1 className="flex justify-end pr-10 pb-5 md:mr-20 text-4xl font-montserrat tracking-tight uppercase font-bold text-black dark:text-white" id="about">about me</h1>
         <div className="relative pt-20">
         <div className="absolute top-0 right-0 p-5 md:p-0 flex gap-10 z-10 justify-end md:mr-20">
-        <div className=" bg-white dark:bg-blacker md:w-1/2 p-5 rounded-md drop-shadow-lg shadow-black">
+          <div className=" bg-white dark:bg-blacker md:w-1/2 p-5 rounded-md drop-shadow-lg shadow-black">
             <img src='/src/assets/self.jpg'className='rounded-lg w-1/3 float-right grayscale '/>
             <p className="font-montserrat text-md text-black dark:text-white">
                 Hi there! I'm a passionate software engineer who loves to code. Ever since I started my coding journey, 
                 I've been captivated by the world of web development, especially React, JavaScript, and CSS. 
                 It's not uncommon for me to spend hours on end immersed in coding, as I find it both engaging and fulfilling.
             </p>
-        </div>
-        {/* <div className=" bg-white dark:bg-black h-52 w-52 p-20 rounded-md drop-shadow-md shadow-black">img</div>
-        <div className=" bg-white dark:bg-black h-52 w-52 p-20 rounded-md drop-shadow-md shadow-black">img</div> */}
+          </div>
         </div>
       <div className="relative isolate overflow-hidden bg-cyan-600 dark:bg-blacker py-24 px-5 md:px-10 sm:py-32 transform -skew-y-6 font-montserrat mt-28 md:mt-0 ">
         <div className="mx-auto max-w-7xl px-6 lg:px-8 transform skew-y-6">
@@ -61,14 +57,22 @@ import { faHtml5, faCss3, faJs, faReact, faNodeJs } from "@fortawesome/free-bran
             </p>
           </div>
           <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
-            <div className="grid grid-cols-2 gap-x-8 gap-y-6 text-md font-semibold leading-7 text-black sm:grid-cols-4 md:flex lg:gap-x-10">
-              {links.map((link, index) => (
-                <a key={`${link.name}-${index}`} href={link.href}>
-                {link.name} <span aria-hidden="true">&rarr;</span>
-                </a>
-              ))}
+            <div className="grid grid-cols-2 gap-x-8 gap-y-6 text-md font-semibold leading-7 sm:grid-cols-4 md:flex lg:gap-x-10">
+            {links.map((link, index) => (
+                <Link
+                    key={`${link.name}-${index}`}
+                    to={link.id}
+                    smooth={true}
+                    duration={500}
+                    spy={true}
+                    offset={-50}
+                    className="text-blacker hover:text-black dark:text-white dark:hover:text-neutral-300 hover:cursor-pointer"
+                >
+                    {link.name} <span aria-hidden="true">&rarr;</span>
+                </Link>
+            ))}
             </div>
-            <dl className="mt-16 grid grid-cols-2 gap-8 sm:mt-20 sm:grid-cols-5 lg:grid-cols-5 place-items-center">
+            <dl className="mt-16 grid grid-cols-2 gap-8 sm:mt-20 sm:grid-cols-6 lg:grid-cols-6 place-items-center">
                 {stats.map((stat, index) => (
                 <div key={`${stat.name}-${index}`} className="flex flex-col-reverse">
                 <dt className="text-xl leading-7 text-gray-300">{stat.name}</dt>
@@ -77,6 +81,8 @@ import { faHtml5, faCss3, faJs, faReact, faNodeJs } from "@fortawesome/free-bran
                 </dd>
                 </div>
                 ))}
+                <dt className="text-xl flex flex-col items-center text-gray-300"><img src="/src/assets/tailwind.svg" className="w-16 h-16 " /> Tailwind</dt>
+              
             </dl>
           </div>
         </div>

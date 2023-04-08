@@ -50,9 +50,16 @@ const Navigation = () => {
               >
                 Projects
               </Link>
-              <a href="/navbars" className="text-gray-700 hover:text-gray-950 dark:text-white dark:hover:text-neutral-300">
-                Contact
-              </a>
+              <Link
+                to="contact"
+                smooth={true}
+                duration={500}
+                spy={true}
+                offset={-50}
+                className='text-gray-700 hover:text-gray-950 dark:text-white dark:hover:text-neutral-300 hover:cursor-pointer'
+              >
+                contact
+              </Link>
                <Toggle/>
             </div>
           </div>

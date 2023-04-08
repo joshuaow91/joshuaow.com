@@ -10,10 +10,10 @@ const Contact = () => {
     return (
         <div className="bg-white dark:bg-blacker transform -skew-y-6">
             <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md transform skew-y-6">
-            <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-black dark:text-white uppercase">
+            <h2 className="mb-4 text-4xl tracking-tight font-extrabold left text-black dark:text-white uppercase" id="contact">
                 Get in touch
             </h2>
-            <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
+            <p className="mb-8 lg:mb-16 font-light text-left text-gray-500 dark:text-gray-400 sm:text-md">
             I'd love to hear from you! If you have any questions, project inquiries, or would like to collaborate, 
             feel free to reach out. I'll get back to you as soon as I can.
             </p>
