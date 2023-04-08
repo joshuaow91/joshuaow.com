@@ -5,13 +5,14 @@ import Hero from './Hero'
 import About from './About'
 import Projects from './Projects'
 import Contact from './Contact'
+import Footer from './Footer'
 
 
 function App() {
 
   return (
     <div className='bg-white min-h-screen flex dark:bg-blackest flex-col'>
-      <div className=''>
+      <div className='' id='home'>
         <Navigation/>
       </div>
       <div className='flex p-10 md:p-20 mt-20 mb-20 md:mb-0 '> 
@@ -26,6 +27,9 @@ function App() {
       </div>
       <div className=''>
         <Contact />
+      </div>
+      <div>
+        <Footer />
       </div>
     </div>
   )

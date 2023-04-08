@@ -26,7 +26,7 @@ import { Link } from "react-scroll";
         <div className="relative pt-20">
         <div className="absolute top-0 right-0 p-5 md:p-0 flex gap-10 z-10 justify-end md:mr-20">
           <div className=" bg-white dark:bg-blacker md:w-1/2 p-5 rounded-md drop-shadow-lg shadow-black">
-            <img src='/src/assets/self.jpg'className='rounded-lg w-1/3 float-right grayscale '/>
+            <img src='/src/assets/self.jpg'className='rounded-lg w-1/3 float-right grayscale ml-3'/>
             <p className="font-montserrat text-md text-black dark:text-white">
                 Hi there! I'm a passionate software engineer who loves to code. Ever since I started my coding journey, 
                 I've been captivated by the world of web development, especially React, JavaScript, and CSS. 
