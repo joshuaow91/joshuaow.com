@@ -13,7 +13,7 @@ function App() {
       <div className=''>
         <Navigation/>
       </div>
-      <div className='flex p-20 mt-20 '> 
+      <div className='flex p-10 md:p-20 mt-20 mb-20 md:mb-0 '> 
         <Hero />
       </div>
       <div>
