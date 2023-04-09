@@ -95,3 +95,4 @@ import TwindLogo from './assets/tailwind.svg'
   }
   
   export default About;
+  

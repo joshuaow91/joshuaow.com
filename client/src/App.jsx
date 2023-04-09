@@ -12,13 +12,13 @@ function App() {
 
   return (
     <div className='bg-white min-h-screen flex dark:bg-blackest flex-col'>
-      <div className='' id='home'>
+      <div className='mb-20' id='home'>
         <Navigation/>
       </div>
-      <div className='flex p-10 md:p-20 mt-20 mb-20 md:mb-0 '> 
+      <div className='flex p-10 md:p-20 mt-20 mb-20 md:mb-0'> 
         <Hero />
       </div>
-      <div>
+      <div className='mt-20'>
         {/* <Footer /> */}
         <About />
       </div>
