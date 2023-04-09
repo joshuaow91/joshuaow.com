@@ -2,6 +2,8 @@ import { faCss3, faHtml5, faNodeJs, faReact } from "@fortawesome/free-brands-svg
 import { faCode } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
+import Orderly from './assets/orderly.png'
+import Img from './assets/img.png'
 
 const Projects = () => {
   const timelineItems = [
@@ -10,21 +12,21 @@ const Projects = () => {
       label: "Team Project",
       description:
         "inventory automation",
-      img: '/src/assets/orderly.png' 
+      img: Orderly 
     },
     {
         title: "project",
         label: "Individual",
         description:
           "description",
-        img: '/src/assets/img.png'
+        img: Img
       },
       {
         title: "project",
         label: "Individual",
         description:
           "description",
-        img: '/src/assets/img.png'
+        img: Img
       },
   ];
 
