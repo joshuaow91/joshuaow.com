@@ -1,0 +1,38 @@
+import { faCode, faPaperPlane, faRocket } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from "react";
+
+const Skills = () => {
+
+    return (
+        <div className="grid grid-cols-1 m-4 lg:grid-cols-3 gap-3 font-montserrat">
+
+            <div className="bg-white dark:bg-darkBlack drop-shadow-lg shadow-black rounded-lg p-4 max-w-s flex items-center gap-4">
+                <FontAwesomeIcon icon={faCode} className="text-6xl bg-slate-300 rounded-full text-slate-800 p-6 h-18 w-16"/>
+                <p className="text-darkBlack dark:text-gray-300 text-sm flex flex-col">
+                <span className="text-lg font-semibold dark:text-white tracking-tight">Web/App Devolpment</span>
+                Front-end and back-end web development and design, from wireframes and UI/UX design, 
+                to Full Stack Web Applications.
+                </p>
+            </div>
+            <div className="bg-white dark:bg-darkBlack drop-shadow-lg shadow-black rounded-lg p-4 max-w-s flex items-center gap-4">
+                <FontAwesomeIcon icon={faPaperPlane} className="text-6xl bg-slate-300 rounded-full text-slate-800 p-6 h-18 w-16"/>
+                <p className="text-darkBlack dark:text-gray-300 text-sm flex flex-col">
+                <span className="text-lg font-semibold dark:text-white tracking-tight">Web/App Devolpment</span>
+                Front-end and back-end web development and design, from wireframes and UI/UX design, 
+                to Full Stack Web Applications.
+                </p>
+            </div>
+            <div className="bg-white dark:bg-darkBlack drop-shadow-lg shadow-black rounded-lg p-4 max-w-s flex items-center gap-4">
+                <FontAwesomeIcon icon={faRocket} className="text-6xl bg-slate-300 rounded-full text-slate-800 p-6 h-18 w-16"/>
+                <p className="text-darkBlack dark:text-gray-300 text-sm flex flex-col">
+                <span className="text-lg font-semibold dark:text-white tracking-tight">Web/App Devolpment</span>
+                Front-end and back-end web development and design, from wireframes and UI/UX design, 
+                to Full Stack Web Applications.
+                </p>
+            </div>
+        </div>
+    )
+}
+
+export default Skills;

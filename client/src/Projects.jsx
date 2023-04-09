@@ -32,10 +32,10 @@ const Projects = () => {
 
   return (
     <>
-    <h1 className=" flex justify-end font-montserrat font-bold mb-6 text-4xl tracking-tight text-black dark:text-white">PROJECTS</h1>
+    <h1 className=" flex justify-start font-montserrat font-bold mb-6 text-4xl tracking-tight text-black dark:text-white">PROJECTS</h1>
      <ol className="relative border-l md:border-t border-gray-200 dark:border-darkBlack flex flex-col md:flex-row">
       {timelineItems.map((item, index) => (
-        <li key={index} className="mt-5 space-x-10">
+        <li key={index} className="mt-5 space-x-14">
           <span className="absolute flex items-center justify-center w-7 h-7 bg-blue-100 rounded-full -left-3  md:-top-3 ring-8 ring-neutral-100 dark:ring-gray-900 dark:bg-pink-500 dark:text-white">
             <FontAwesomeIcon icon={faCode} />
           </span>
