@@ -2,6 +2,8 @@ import React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHtml5, faCss3, faJs, faReact, faNodeJs } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-scroll";
+import Self from './assets/self.jpg'
+import TwindLogo from './assets/tailwind.svg'
 
   
   const About = () => {
@@ -26,7 +28,7 @@ import { Link } from "react-scroll";
         <div className="relative pt-20">
         <div className="absolute top-0 right-0 p-5 md:p-0 flex gap-10 z-10 justify-end md:mr-20">
           <div className=" bg-white dark:bg-blacker md:w-1/2 p-5 rounded-md drop-shadow-lg shadow-black">
-            <img src='/src/assets/self.jpg'className='rounded-lg w-1/3 float-right grayscale ml-3'/>
+            <img src={Self} className='rounded-lg w-1/3 float-right grayscale ml-3'/>
             <p className="font-montserrat text-md text-black dark:text-white">
                 Hi there! I'm a passionate software engineer who loves to code. Ever since I started my coding journey, 
                 I've been captivated by the world of web development, especially React, JavaScript, and CSS. 
@@ -81,7 +83,7 @@ import { Link } from "react-scroll";
                 </dd>
                 </div>
                 ))}
-                <dt className="text-xl flex flex-col items-center text-gray-300"><img src="/src/assets/tailwind.svg" className="w-16 h-16 " /> Tailwind</dt>
+                <dt className="text-xl flex flex-col items-center text-gray-300"><img src={TwindLogo} className="w-16 h-16 " /> Tailwind</dt>
               
             </dl>
           </div>
