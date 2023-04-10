@@ -42,7 +42,7 @@ const Projects = () => {
           <h3 className="flex items-center justify-center mb-1 text-lg font-semibold text-black dark:text-white tracking-tight">
             {item.title.toUpperCase()}
             {item.label && (
-              <span className="bg-indigo-500 text-white text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-darkBlack dark:text-neutral-200 ml-3">
+              <span className="bg-accent text-gray-700 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-darkBlack dark:text-neutral-200 ml-3">
                 {item.label}
               </span>
             )}
@@ -63,7 +63,7 @@ const Projects = () => {
             {item.img && (
                 <img src={item.img} alt={item.title} className="hover:scale-105 ease-in-out duration-300 rounded-md" />
             )}
-            <button className="w-full my-4 p-2 text-neutral-50 dark:text-black bg-gradient-to-r from-emerald-500 via-emerald-400 to-emerald-400 font-montserrat text-xs rounded hover:scale-105 ease-in-out duration-300">
+            <button className="w-full my-4 p-2 text-neutral-50 dark:text-black bg-gradient-to-r from-indigo-400 via-indigo-500 to-indigo-500 font-montserrat text-xs rounded hover:scale-105 ease-in-out duration-300">
             Launch Demo
             </button>
             </a>
