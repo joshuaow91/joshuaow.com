@@ -8,15 +8,15 @@ import bgImage from './assets/parallax.svg'
 
   
   const About = () => {
-    const [bgPositionY, setBgPositionY] = useState(-350);
+    const [bgPositionY, setBgPositionY] = useState(-500);
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      const maxScrollPosition = 700;
+      const maxScrollPosition = 950;
   
       if (scrollPosition <= maxScrollPosition) {
-        setBgPositionY(scrollPosition * 0.5 - 350);
+        setBgPositionY(scrollPosition * 0.5 - 500);
       } else {
-        setBgPositionY(maxScrollPosition * 0.5 - 350);
+        setBgPositionY(maxScrollPosition * 0.5 - 500);
       }
     };
   
