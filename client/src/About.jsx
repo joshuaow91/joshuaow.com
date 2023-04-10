@@ -44,7 +44,7 @@ import bgImage from './assets/parallax.svg'
 
     return (
         <>
-        <h1 className="flex justify-end pr-10 pb-5 md:mr-20 text-4xl font-montserrat tracking-tight uppercase font-bold text-black dark:text-white" id="about">about me</h1>
+        <h1 className="flex justify-end pr-10 pb-5 md:mr-20 text-4xl font-montserrat tracking-tight uppercase font-bold text-darkBlack dark:text-white" id="about">about me</h1>
         <div className="relative pt-20">
         <div className="absolute top-0 right-0 p-5 md:p-0 flex gap-10 z-10 justify-end md:mr-20">
 
@@ -92,13 +92,13 @@ import bgImage from './assets/parallax.svg'
             <dl className="grid grid-cols-3 gap-4 sm:mt-10 sm:grid-cols-3 lg:grid-cols-6 place-items-center">
                 {stats.map((stat, index) => (
                 <div key={`${stat.name}-${index}`} className="flex flex-col-reverse">
-                <dt className="text-xl leading-7 text-white dark:text-zinc-600">{stat.name}</dt>
+                <dt className="text-xl leading-7 text-zinc-300 dark:text-zinc-600">{stat.name}</dt>
                 <dd className="text-lg font-bold leading-9 tracking-tight text-white dark:text-white text-center">
                     <FontAwesomeIcon icon={stat.icon} className="h-10 w-10 md:h-12 md:w-12" />
                 </dd>
                 </div>
                 ))}
-                <dt className="text-xl flex flex-col items-center mb-3 text-white dark:text-zinc-600"><img src={TwindLogo} className="w-16 h-16 " />Tailwind</dt>
+                <dt className="text-xl flex flex-col items-center mb-3 text-zinc-300 dark:text-zinc-600"><img src={TwindLogo} className="w-16 h-16 " />Tailwind</dt>
               
             </dl>
           </div>

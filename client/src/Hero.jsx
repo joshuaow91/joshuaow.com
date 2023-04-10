@@ -11,7 +11,7 @@ const Hero = () => {
         <h1 className="text-5xl sm:text-7xl md:text-7xl lg:text-7xl font-extrabold text-darkBlack tracking-tighter dark:text-white">JOSHUA OW</h1>
         <p className="text-md sm:text-xl md:text-xl font-light text-darkBlack tracking-widest dark:text-white">FULL-STACK SOFTWARE ENGINEER</p>
 
-        <button className="py-3 px-8 my-6 text-neutral-50 bg-gradient-to-r from-sky-500 via-sky-500 to-sky-600 font-montserrat text-xs rounded hover:scale-105 ease-in-out duration-300">
+        <button className="py-3 px-8 my-6 text-neutral-50 bg-gradient-to-r from-emerald-500 via-emerald-500 to-emerald-600 font-montserrat text-xs rounded hover:scale-105 ease-in-out duration-300">
           Download Resume
         </button>
 

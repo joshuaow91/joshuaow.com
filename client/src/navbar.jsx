@@ -20,7 +20,7 @@ const Navigation = () => {
 
   return (
     <nav className="fixed w-full mx-auto top-0 drop-shadow-lg shadow-black z-20">
-      <div className={`bg-white font-montserrat lowercase text-md px-4 h-16 flex justify-between rounded-lg items-center space-x-7 mx-4 mt-4  dark:bg-blacker dark:shadow-none dark:bg-opacity-95 bg-opacity-95 ${isMenuOpen ? 'rounded-b-none' : 'rounded-lg'}`}>
+      <div className={`bg-indigo-500 font-montserrat lowercase text-md px-4 h-16 flex justify-between rounded-lg items-center space-x-7 mx-4 mt-4  dark:bg-blacker dark:shadow-none dark:bg-opacity-95 bg-opacity-95 ${isMenuOpen ? 'rounded-b-none' : 'rounded-lg'}`}>
         <button
           onClick={toggleMenu}
           className="outline-none md:hidden"
@@ -40,7 +40,7 @@ const Navigation = () => {
               duration={500}
               spy={true}
               offset={-50}
-              className="text-gray-700 hover:text-gray-950 dark:text-white dark:hover:text-neutral-300 hover:cursor-pointer"
+              className="text-white hover:text-gray-200 dark:text-white dark:hover:text-neutral-300 hover:cursor-pointer"
             >
               {label}
             </Link>

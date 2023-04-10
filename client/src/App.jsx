@@ -16,7 +16,7 @@ function App() {
       <div className='mb-20' id='home'>
         <Navigation/>
       </div>
-      <div className='flex p-10 md:p-20 mt-20 mb-20 md:mb-0'> 
+      <div className='flex p-10 md:p-20 mt-20 mb-20 md:mb-56 md:mt-36'> 
         <Hero />
       </div>
       <div className=' my-10 md:my-20 lg:relative'>
