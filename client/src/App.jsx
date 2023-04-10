@@ -2,11 +2,12 @@ import React from 'react'
 import Navigation from './navbar'
 import './index.css'
 import Hero from './Hero'
-import About from './About'
+import Skillsets from './Skillsets'
 import Projects from './Projects'
 import Contact from './Contact'
 import Footer from './Footer'
 import Skills from './Skills'
+import About from './About'
 
 
 function App() {
@@ -16,11 +17,12 @@ function App() {
       <div className='mb-20' id='home'>
         <Navigation/>
       </div>
-      <div className='flex p-10 md:p-20 mt-20 mb-20 md:mb-56 md:mt-36'> 
+      <div className='flex bg-emerald-500  justify-between p-10 md:p-20 mt-20 mb-20 md:mb-56 md:mt-36'> 
         <Hero />
+        <About />
       </div>
       <div className=' my-10 md:my-20 lg:relative'>
-        <About />
+        <Skillsets />
         <div className=' lg:absolute lg:-bottom-32 xl:-bottom-28'>
         <Skills />
         </div>
