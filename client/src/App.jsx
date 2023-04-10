@@ -19,13 +19,13 @@ function App() {
       <div className='flex p-10 md:p-20 mt-20 mb-20 md:mb-0'> 
         <Hero />
       </div>
-      <div className='my-20 lg:relative'>
+      <div className=' my-10 md:my-20 lg:relative'>
         <About />
         <div className=' lg:absolute lg:-bottom-32 xl:-bottom-28'>
         <Skills />
         </div>
       </div>
-      <div className=" p-20 mt-20 mb-10" id='projects-section'>
+      <div className=" p-10 md:p-20 md:mt-20 mb-10" id='projects-section'>
         <Projects />
       </div>
       <div className=''>
