@@ -18,22 +18,22 @@ const Hero = () => {
         <ul className="space-x-4 justify-start flex">
           <li>
             <a href="https://www.linkedin.com/in/JoshuaOwDev" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faLinkedin} className="h-8 w-8 text-indigo-500 hover:text-indigo-400" />
+              <FontAwesomeIcon icon={faLinkedin} className="h-8 w-8 text-indigo-500 hover:text-indigo-400 dark:text-slate-400 dark:hover:text-slate-300" />
             </a>
           </li>
           <li>
             <a href="https://www.github.com//joshuaow91" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faGithubSquare} className="h-8 w-8 text-indigo-500 hover:text-indigo-400" />
+              <FontAwesomeIcon icon={faGithubSquare} className="h-8 w-8 text-indigo-500 hover:text-indigo-400 dark:text-slate-400 dark:hover:text-slate-300" />
             </a>
           </li>
           <li>
             <a href="https://www.twitter.com/JoshuaOwDev" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faTwitterSquare} className="h-8 w-8 text-indigo-500 hover:text-indigo-400" />
+              <FontAwesomeIcon icon={faTwitterSquare} className="h-8 w-8 text-indigo-500 hover:text-indigo-400 dark:text-slate-400 dark:hover:text-slate-300" />
             </a>
           </li>
           <li>
             <a href="mailto:joshuaow@gmail.com" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faSquareEnvelope} className="h-8 w-8 text-indigo-500 hover:text-indigo-400" />
+              <FontAwesomeIcon icon={faSquareEnvelope} className="h-8 w-8 text-indigo-500 hover:text-indigo-400 dark:text-slate-400 dark:hover:text-slate-300" />
             </a>
           </li>
         </ul>
