@@ -52,7 +52,7 @@ const Contact = () => {
             </div>
             <button
                 type="submit"
-                className="py-2.5 px-4 my-4 text-neutral-50 bg-gradient-to-r from-emerald-500 via-emerald-500 to-emerald-600 font-montserrat text-xs rounded hover:scale-105 ease-in-out duration-300"
+                className="py-2.5 px-4 my-4 text-gray-700 bg-gradient-to-r from-accent via-accent to-accent font-montserrat text-xs rounded hover:scale-105 ease-in-out duration-300"
                 // className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
             >
                 Send message

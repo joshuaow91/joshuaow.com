@@ -37,7 +37,7 @@ import bgImage from './assets/parallax.svg'
 
     return (
         <>
-        <div className="relative isolate overflow-hidden bg-emerald-500 dark:bg-blacker h-96  px-5 md:px-10  font-montserrat mt-28 md:mt-0"
+        <div className="relative isolate overflow-hidden bg-indigo-500 dark:bg-blacker h-96  px-5 md:px-10  font-montserrat mt-28 md:mt-0"
           style={{
             backgroundImage: `url(${bgImage})`,
             backgroundSize: "contain",
@@ -49,7 +49,7 @@ import bgImage from './assets/parallax.svg'
         {/* style={{ transform: `translateY(${bgPositionY}px)` }}> */}
         <div className="mx-auto max-w-7xl px-2 lg:px-8">
           <div className="mx-auto max-w-2xl lg:mx-0 mt-20 md:mt-20">
-            <h2 className="text-4xl font-bold tracking-tight text-center md:text-left text-darkBlack dark:text-white sm:text-4xl uppercase">My Skillsets</h2>
+            <h2 className="text-4xl font-bold tracking-tight text-center md:text-left text-accent dark:text-white sm:text-4xl uppercase">My Skillsets</h2>
           </div>
           <div className="mx-auto mt-8 max-w-2xl lg:mx-0 lg:max-w-none">
             <dl className="grid grid-cols-3 gap-4 sm:mt-10 sm:grid-cols-3 lg:grid-cols-6 place-items-center">

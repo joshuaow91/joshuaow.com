@@ -24,7 +24,8 @@ export default {
         blackest:'#141414',
         white: '#F8F8F8',
         greener: '#4ADE80',
-        tealer: '#64FFDA'
+        accent: '#CCF381',
+        baseTwo: '#4831D4'
       },
     },
   },

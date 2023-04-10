@@ -14,12 +14,16 @@ function App() {
 
   return (
     <div className='bg-white min-h-screen flex dark:bg-blackest flex-col'>
-      <div className='mb-20' id='home'>
+      <div className='' id='home'>
         <Navigation/>
       </div>
-      <div className='flex bg-emerald-500  justify-between p-10 md:p-20 mt-20 mb-20 md:mb-56 md:mt-36'> 
+      <div className='flex bg-gray-100   justify-between p-10 md:p-20  mb-20 md:mb-56 transform skew-y-6'> 
+      <div className='transform -skew-y-6'>
         <Hero />
+      </div>
+        <div className='transform -skew-y-6' id='about'>
         <About />
+        </div>
       </div>
       <div className=' my-10 md:my-20 lg:relative'>
         <Skillsets />
