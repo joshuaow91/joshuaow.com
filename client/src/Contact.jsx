@@ -4,12 +4,12 @@ const Contact = () => {
 
 
     return (
-        <div className="bg-white dark:bg-blackest ">
+        <div className="bg-teal-500 dark:bg-blackest ">
             <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md ">
             <h2 className="mb-4 text-6xl tracking-tight font-montserrat font-extrabold text-center text-zinc-700 dark:text-white uppercase" id="contact">
                 Get in touch
             </h2>
-            <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-md">
+            <p className="mb-8 lg:mb-16 font-light text-center text-slate-800 dark:text-gray-400 sm:text-md">
             I'd love to hear from you! If you have any questions, project inquiries, or would like to collaborate, 
             feel free to reach out. I'll get back to you as soon as I can.
             </p>
