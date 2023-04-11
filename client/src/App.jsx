@@ -13,19 +13,14 @@ import About from './About'
 function App() {
 
   return (
-    <div className='bg-white min-h-screen flex dark:bg-blackest flex-col'>
+    <div className='bg-indigo-100 min-h-screen flex dark:bg-blackest flex-col'>
       <div className='' id='home'>
         <Navigation/>
       </div>
-      <div className='flex bg-gray-100   justify-between p-10 md:p-20  mb-20 md:mb-56 transform skew-y-6'> 
-      <div className='transform -skew-y-6'>
+      <div className='flex md:flex-row justify-evenly items-center min-h-screen '> 
         <Hero />
       </div>
-        <div className='transform -skew-y-6' id='about'>
-        <About />
-        </div>
-      </div>
-      <div className=' my-10 md:my-20 lg:relative'>
+      <div className=' my-10  lg:relative'>
         <Skillsets />
         <div className=' lg:absolute lg:-bottom-32 xl:-bottom-28'>
         <Skills />
