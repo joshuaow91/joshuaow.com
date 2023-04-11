@@ -1,47 +1,43 @@
 import React from "react";
-import { Link } from "react-scroll";
 import Self from './assets/self.jpg'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithubSquare, faLinkedin, faTwitterSquare } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons';
 
 const About = () => {
 
-    const links = [
-        { name: 'projects', id: 'projects-section' },
-        { name: 'contact', id: 'contact' },
+      const socials = [
+        { icon: faLinkedin, href: 'https://www.linkedin.com/in/JoshuaOwDev' },
+        { icon: faTwitterSquare, href: 'https://www.twitter.com/JoshuaOwDev' },
+        { icon: faGithubSquare, href: 'https://www.github.com/joshuaow91' },
+        { icon: faEnvelopeSquare, href: 'mailto:joshuaow@gmail.com' },
       ]
 
     return (
         <>
-      {/* <h1 className="flex justify-end pr-10 pb-5 md:mr-20 text-4xl font-montserrat tracking-tight uppercase font-bold text-darkBlack dark:text-white" id="about">about me</h1> */}
-      {/* <div className="relative pt-20"> */}
-      {/* <div className="absolute top-0 right-0 p-5 md:p-0 flex gap-10 z-10 justify-end md:mr-20"> */}
+        <div className="flex flex-col-reverse gap-2  bg-indigo-50 dark:bg-blacker max-w-xs m-4 rounded-lg drop-shadow-md shadow-black">
+            {/* <div className="flex items-center p-4">
+                <p className="font-montserrat text-sm tracking-wider text-zinc-700 dark:text-white">
+                    I specialize in the meticulous design and development of visually appealing applications that prioritize scalability and performance.
+                </p>
+            </div> */}
 
-        <div className=" bg-white dark:bg-blacker sm:max-w-lg  md:max-w-sm lg:max-w-lg p-5 rounded-md drop-shadow-lg shadow-black">
-
-          <img src={Self} className='rounded-lg w-1/3 float-right grayscale ml-3 max-w-1/2'/>
-          <p className="font-montserrat text-md text-black dark:text-white">
-          Eager software engineer with a love for web development, skilled in JavaScript, and truly enjoy immersive coding sessions.
-              {/* Hi there! I'm a passionate software engineer who loves to code. Ever since I started my coding journey,  */}
-              {/* I've been captivated by the world of web development, especially React, JavaScript, and CSS. 
-              It's not uncommon for me to spend hours on end immersed in coding, as I find it both engaging and fulfilling. */}
-          </p>
-          <div className="grid grid-cols-2 gap-x-8 gap-y-6 text-md font-semibold leading-7 sm:grid-cols-4 md:flex lg:gap-x-10 mt-4 place-items-center md:place-items-start">
-          {links.map((link, index) => (
-              <Link
-                  key={`${link.name}-${index}`}
-                  to={link.id}
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  offset={-50}
-                  className="text-blacker hover:text-black dark:text-white dark:hover:text-neutral-300 hover:cursor-pointer"
-              >
-                  {link.name} <span aria-hidden="true">&rarr;</span>
-              </Link>
-          ))}
+          <div className="flex flex-col items-center gap-4 bg-indigo-50 p-4 rounded-lg rounded-l-none ">
+            <img src={Self} className='rounded-lg grayscale object-cover object-center w-full h-auto max-w-md max-h-md' />
+            {/* <p className="font-montserrat text-sm tracking-wider text-zinc-700 dark:text-white">
+                I specialize in the meticulous design and development of visually appealing applications that prioritize scalability and performance.
+            </p> */}
+            <ul className="space-x-4 flex">
+                {socials.map((social, index) => (
+                <li key={index}>
+                  <a href={social.href} target="_blank" rel="noopener noreferrer">
+                    <FontAwesomeIcon icon={social.icon} className="h-8 w-8 text-indigo-400 hover:text-indigo-500 dark:text-slate-400 dark:hover:text-slate-300" />
+                  </a>
+                </li>
+                ))}
+            </ul>
           </div>
         </div>
-      {/* </div> */}
-      {/* </div> */}
       </>
     )
 }
