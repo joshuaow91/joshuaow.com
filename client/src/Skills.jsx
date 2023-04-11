@@ -6,7 +6,7 @@ import React from "react";
 const Skills = () => {
 
     return (
-        <div className="grid grid-cols-1 m-4 lg:grid-cols-3 gap-3 font-montserrat">
+        <div className="grid grid-cols-1 m-4 lg:grid-cols-3 gap-3 font-light">
 
             <div className="bg-indigo-50 dark:bg-darkBlack drop-shadow-lg shadow-black rounded-lg p-4 max-w-s flex items-center gap-4">
                 <FontAwesomeIcon icon={faLaptopCode} className="text-6xl bg-indigo-100 rounded-full text-indigo-500 p-6 h-18 w-16"/>

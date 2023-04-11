@@ -27,11 +27,11 @@ const About = () => {
             {/* <p className="font-montserrat text-sm tracking-wider text-zinc-700 dark:text-white">
                 I specialize in the meticulous design and development of visually appealing applications that prioritize scalability and performance.
             </p> */}
-            <ul className="space-x-4 flex">
+            <ul className="space-x-2 flex">
                 {socials.map((social, index) => (
                 <li key={index}>
                   <a href={social.href} target="_blank" rel="noopener noreferrer">
-                    <FontAwesomeIcon icon={social.icon} className="h-8 w-8 text-indigo-200 hover:text-indigo-500 dark:text-slate-400 dark:hover:text-slate-300" />
+                    <FontAwesomeIcon icon={social.icon} className="h-8 w-8 text-zinc-300 hover:text-indigo-500 dark:text-slate-400 dark:hover:text-slate-300" />
                   </a>
                 </li>
                 ))}
