@@ -6,7 +6,7 @@ const Contact = () => {
     return (
         <div className="bg-white dark:bg-blackest ">
             <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md ">
-            <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-darkBlack dark:text-white uppercase" id="contact">
+            <h2 className="mb-4 text-6xl tracking-tight font-montserrat font-extrabold text-center text-darkBlack dark:text-white uppercase" id="contact">
                 Get in touch
             </h2>
             <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-md">
@@ -22,7 +22,7 @@ const Contact = () => {
                 <input
                     type="email"
                     name="email"
-                    className="drop-shadow-md bg-gray-50 border border-gray-300 outline-pink-500 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-black dark:border-darkBlack dark:placeholder-gray-200 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                    className="drop-shadow-md bg-gray-50 border border-gray-300 outline-indigo-500 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-black dark:border-darkBlack dark:placeholder-gray-200 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
                     placeholder="name@domain.com"
                     required
                 />

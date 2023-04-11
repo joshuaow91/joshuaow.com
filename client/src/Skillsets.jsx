@@ -6,15 +6,15 @@ import bgImage from './assets/parallax.svg'
 
   
   const Skillsets = () => {
-    const [bgPositionY, setBgPositionY] = useState(-500);
+    const [bgPositionY, setBgPositionY] = useState(-400);
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
       const maxScrollPosition = 950;
   
       if (scrollPosition <= maxScrollPosition) {
-        setBgPositionY(scrollPosition * 0.5 - 500);
+        setBgPositionY(scrollPosition * 0.5 - 400);
       } else {
-        setBgPositionY(maxScrollPosition * 0.5 - 500);
+        setBgPositionY(maxScrollPosition * 0.5 - 950);
       }
     };
   
@@ -37,10 +37,10 @@ import bgImage from './assets/parallax.svg'
 
     return (
         <>
-        <div className="relative isolate overflow-hidden bg-indigo-500 dark:bg-blacker h-96  px-5 md:px-10  font-montserrat mt-28 md:mt-0"
+        <div className="relative isolate overflow-hidden bg-teal-500 dark:bg-blacker h-96  px-5 md:px-10  font-light mt-28 md:mt-0"
           style={{
             backgroundImage: `url(${bgImage})`,
-            backgroundSize: "contain",
+            backgroundSize: "cover",
             backgroundPositionY: `${bgPositionY}px`,
             backgroundRepeat: 'no-repeat',
           }}>
@@ -48,20 +48,20 @@ import bgImage from './assets/parallax.svg'
         <div className="absolute top-0 left-0 w-full h-full z-(-1)">
         {/* style={{ transform: `translateY(${bgPositionY}px)` }}> */}
         <div className="mx-auto max-w-7xl px-2 lg:px-8">
-          <div className="mx-auto max-w-2xl lg:mx-0 mt-20 md:mt-20">
-            <h2 className="text-4xl font-bold tracking-tight text-center md:text-left text-accent dark:text-white sm:text-4xl uppercase">My Skillsets</h2>
+          <div className="mx-auto max-full lg:mx-0 mt-20 md:mt-10 flex justify-center">
+            <h2 className="text-6xl font-bold tracking-tight text-center md:text-left text-zinc-700 dark:text-white uppercase">Skillsets</h2>
           </div>
           <div className="mx-auto mt-8 max-w-2xl lg:mx-0 lg:max-w-none">
             <dl className="grid grid-cols-3 gap-4 sm:mt-10 sm:grid-cols-3 lg:grid-cols-6 place-items-center">
                 {stats.map((skill, index) => (
                 <div key={`${skill.name}-${index}`} className="flex flex-col-reverse">
-                <dt className="text-xl leading-7 text-zinc-300 dark:text-zinc-600">{skill.name}</dt>
+                <dt className="text-lg leading-7 text-teal-800 dark:text-zinc-600">{skill.name}</dt>
                 <dd className="text-lg font-bold leading-9 tracking-tight text-white dark:text-white text-center">
-                    <FontAwesomeIcon icon={skill.icon} className="h-10 w-10 md:h-12 md:w-12" />
+                    <FontAwesomeIcon icon={skill.icon} className="h-10 w-10 md:h-14 md:w-14" />
                 </dd>
                 </div>
                 ))}
-                <dt className="text-xl flex flex-col items-center mb-3 text-zinc-300 dark:text-zinc-600"><img src={TwindLogo} className="w-16 h-16 " />Tailwind</dt>
+                <dt className="text-lg flex flex-col items-center mb-3 text-teal-800 dark:text-zinc-600"><img src={TwindLogo} className="w-16 h-16 " />Tailwind</dt>
               
             </dl>
           </div>
