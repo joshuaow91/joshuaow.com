@@ -6,18 +6,18 @@ import bgImage from './assets/parallax.svg'
 
   
   const Skillsets = () => {
-    const [bgPositionY, setBgPositionY] = useState(300); // Set the initial value to 250
+    const [bgPositionY, setBgPositionY] = useState(-250);
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
       const maxScrollPosition = 950;
-    
+  
       if (scrollPosition <= maxScrollPosition) {
-        setBgPositionY(300 - scrollPosition * 0.3); // Update the formula here
+        setBgPositionY(scrollPosition * 0.25 - 250);
       } else {
-        setBgPositionY(300 - maxScrollPosition * 0.3); // Update the formula here
+        setBgPositionY(maxScrollPosition * 0.25 - 950);
       }
     };
-    
+  
     useEffect(() => {
       window.addEventListener("scroll", handleScroll);
       return () => window.removeEventListener("scroll", handleScroll);
@@ -37,7 +37,7 @@ import bgImage from './assets/parallax.svg'
 
     return (
         <>
-        <div className="relative isolate overflow-hidden bg-white dark:bg-blacker h-96 mb-20 px-5  font-light "
+        <div className="relative isolate overflow-hidden bg-teal-500 dark:bg-blacker h-96  px-5  font-light "
           style={{
             backgroundImage: `url(${bgImage})`,
             backgroundSize: "cover",
@@ -49,14 +49,14 @@ import bgImage from './assets/parallax.svg'
         {/* style={{ transform: `translateY(${bgPositionY}px)` }}> */}
         <div className="mx-auto max-w-7xl px-2">
           <div className="mx-auto max-full flex justify-center">
-            <h2 className="text-6xl font-bold tracking-tight text-center text-zinc-700 dark:text-white uppercase">Skillsets</h2>
+            <h2 className="text-6xl font-bold tracking-tight text-center text-zinc-700 dark:text-white uppercase mt-8">Skillsets</h2>
           </div>
-          <div className="mx-auto mt-24 max-w-2xl lg:mx-0 lg:max-w-none">
+          <div className="mx-auto mt-8 max-w-2xl lg:mx-0 lg:max-w-none">
             <dl className="grid grid-cols-2 gap-4 sm:mt-10 sm:grid-cols-3 lg:grid-cols-5 place-items-center">
                 {stats.map((skill, index) => (
                 <div key={`${skill.name}-${index}`} className="flex flex-col-reverse">
                 <dt className="text-lg text-center text-teal-800 dark:text-zinc-600">{skill.name}</dt>
-                <dd className="text-lg font-bold leading-9 tracking-tigt text-indigo-400 hover:text-indigo-500 dark:text-white text-center">
+                <dd className="text-lg font-bold leading-9 tracking-tigt text-teal-600 hover:text-teal-400 dark:text-white text-center">
                     <FontAwesomeIcon icon={skill.icon} className="h-10 w-10 md:h-20 md:w-20" />
                 </dd>
                 </div>
