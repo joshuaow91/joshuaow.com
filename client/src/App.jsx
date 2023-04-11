@@ -12,7 +12,7 @@ import Skills from './Skills'
 function App() {
 
   return (
-    <div className='bg-white min-h-screen flex dark:bg-black flex-col'>
+    <div className='bg-white flex dark:bg-black flex-col'>
       <div className='' id='home'>
         <Navigation/>
       </div>
@@ -31,7 +31,7 @@ function App() {
       <div className=''>
         <Contact />
       </div>
-      <div>
+      <div className='bg-teal-500'>
         <Footer />
       </div>
     </div>
