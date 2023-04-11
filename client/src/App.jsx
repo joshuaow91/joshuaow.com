@@ -16,10 +16,10 @@ function App() {
       <div className='' id='home'>
         <Navigation/>
       </div>
-      <div className='flex md:flex-row justify-evenly items-center min-h-screen '> 
+      <div className='flex md:flex-row justify-evenly items-center min-h-screen'> 
         <Hero />
       </div>
-      <div className='  lg:relative'>
+      <div className='lg:relative'>
         <Skillsets />
         <div className=' lg:absolute lg:-bottom-32 xl:-bottom-28'>
         <Skills />
