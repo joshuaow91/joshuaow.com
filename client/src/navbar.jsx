@@ -23,7 +23,7 @@ const Navigation = () => {
       <div className="fixed top-4 right-4 z-20">
         <button
           onClick={toggleMenu}
-          className=" text-accent bg-indigo-500 hover:text-indigo-600 w-12 h-12 flex justify-center items-center rounded-lg outline-none"
+          className=" text-teal-200 bg-indigo-500 hover:text-indigo-600 w-12 h-12 flex justify-center items-center rounded-lg outline-none"
         >
           {!isMenuOpen ? (
             <FontAwesomeIcon icon={faBars} className='w-6 h-6' />

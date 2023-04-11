@@ -13,7 +13,7 @@ import About from './About'
 function App() {
 
   return (
-    <div className='bg-indigo-100 min-h-screen flex dark:bg-blackest flex-col'>
+    <div className='bg-white min-h-screen flex dark:bg-blackest flex-col'>
       <div className='' id='home'>
         <Navigation/>
       </div>
