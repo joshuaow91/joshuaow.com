@@ -23,7 +23,7 @@ const Toggle = () => {
         checked={isDarkMode}
         onChange={toggleDarkMode}
       />
-      <div className="w-11 h-6 bg-slate-400 peer-focus:outline-none peer-focus:ring-none peer-focus:ring-none dark:peer-focus:ring-none rounded-full peer dark:bg-indigo-400 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-pink500"></div>
+      <div className="w-11 h-6 bg-slate-500 peer-focus:outline-none peer-focus:ring-none peer-focus:ring-none dark:peer-focus:ring-none rounded-full peer dark:bg-teal-400 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-pink500"></div>
       <span className="ml-3 text-sm font-medium text-indigo-50 dark:text-gray-300">
         {isDarkMode ? 'light mode' : 'dark mode'}
       </span>

@@ -31,7 +31,7 @@ const About = () => {
                 {socials.map((social, index) => (
                 <li key={index}>
                   <a href={social.href} target="_blank" rel="noopener noreferrer">
-                    <FontAwesomeIcon icon={social.icon} className="h-8 w-8 text-zinc-300 hover:text-indigo-500 dark:text-slate-400 dark:hover:text-slate-300" />
+                    <FontAwesomeIcon icon={social.icon} className="h-8 w-8 text-zinc-300 hover:text-teal-500 dark:text-slate-400 dark:hover:text-slate-300" />
                   </a>
                 </li>
                 ))}
