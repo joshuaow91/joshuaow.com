@@ -36,14 +36,14 @@ const Projects = () => {
 
      <ol className="relative border-l md:border-t border-gray-200 dark:border-darkBlack flex flex-col ">
       {timelineItems.map((item, index) => (
-        <li key={index} className="mt-5 space-x-14">
+        <li key={index} className="mt-5 flex flex-col items-start px-10">
           <span className="absolute flex items-center justify-center w-7 h-7 bg-indigo-50 rounded-full -left-3  md:-top-3 ring-8 ring-neutral-100 dark:ring-gray-900 dark:bg-pink-500 dark:text-white">
             <FontAwesomeIcon icon={faCode} />
           </span>
-          <h3 className="flex items-center justify-center mb-1 text-lg font-semibold text-black dark:text-white tracking-tight">
+          <h3 className="flex items-center justify-center mb-1 text-2xl font-semibold text-black dark:text-white tracking-tight">
             {item.title.toUpperCase()}
             {item.label && (
-              <span className="bg-teal-300 text-teal-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-darkBlack dark:text-neutral-200 ml-3">
+              <span className="bg-teal-100 text-zinc-700 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-darkBlack dark:text-neutral-200 ml-3">
                 {item.label}
               </span>
             )}
