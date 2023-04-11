@@ -13,7 +13,7 @@ const Hero = () => {
         <p className="font-montserrat text-sm tracking-wider text-zinc-700 dark:text-white max-w-sm mt-8">
                 I specialize in the meticulous design and development of visually appealing applications that prioritize scalability and performance.
             </p>
-        <button className="h-12 w-48 mt-10 text-zinc-600 bg-indigo-200 font-montserrat text-md rounded hover:scale-105 ease-in-out duration-300">
+        <button className="h-12 w-48 mt-10 text-zinc-600 bg-teal-300 font-montserrat text-md rounded hover:scale-105 ease-in-out duration-300">
           Download Resume
         </button>
       </div>

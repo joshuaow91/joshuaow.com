@@ -23,7 +23,7 @@ const Navigation = () => {
       <div className="fixed top-4 right-4 z-20">
         <button
           onClick={toggleMenu}
-          className=" text-indigo-400 hover:text-indigo-600 w-12 h-12 flex justify-center items-center rounded-lg outline-none"
+          className=" text-accent bg-indigo-500 hover:text-indigo-600 w-12 h-12 flex justify-center items-center rounded-lg outline-none"
         >
           {!isMenuOpen ? (
             <FontAwesomeIcon icon={faBars} className='w-6 h-6' />
@@ -47,7 +47,7 @@ const Navigation = () => {
                 duration={500}
                 spy={true}
                 offset={-50}
-                className="block py-2.5 px-4 cursor-pointer lowercase transition duration-200 hover:text-indigo-50 hover:bg-indigo-500 first-of-type:rounded-bl-lg last-of-type:rounded-br-lg"
+                className="block py-2.5 px-4 cursor-pointer lowercase transition duration-200 hover:text-indigo-800  first-of-type:rounded-bl-lg last-of-type:rounded-br-lg"
                 onClick={toggleMenu}
               >
               {label}
