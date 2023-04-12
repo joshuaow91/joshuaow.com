@@ -21,7 +21,7 @@ const Projects = () => {
         </div>
 
       <div className="flex flex-col md:flex-row justify-evenly items-center">
-        <div className="flex flex-col w-1/3 p-4 bg-white rounded-lg drop-shadow-lg translate-x-4">
+        <div className="flex flex-col w-1/3 p-4 bg-white rounded-lg drop-shadow-lg translate-x-10">
           <h3 className="flex items-center justify-center mb-1 text-4xl font-semibold text-black dark:text-white tracking-tight">
             ORDERLY
             <span className="bg-teal-100 text-zinc-700 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-darkBlack dark:text-neutral-200 ml-3">
@@ -47,13 +47,13 @@ const Projects = () => {
             </div>
         </div>
 
-          <div className="w-2/3 inline-flex flex-col items-center p-8 py-14 text-gray-900 bg-slate-400 rounded-lg dark:bg-darkBlack dark:hover:bg-black ">
-            <img src={Orderly} alt="Orderly" className="hover:scale-125 grayscale hover:grayscale-0 ease-in-out duration-300 rounded-md drop-shadow-2xl shadow-blackest" />
+          <div className="w-2/3 inline-flex flex-col items-center p-8 py-14 pl-20 text-gray-900 bg-indigo-50 rounded-lg dark:bg-darkBlack dark:hover:bg-black ">
+            <img src={Orderly} alt="Orderly" className="hover:scale-125 ease-in-out duration-300 rounded-md drop-shadow-2xl shadow-blackest" />
           </div>
       </div>
 
       <div className="flex flex-col md:flex-row justify-evenly items-center">
-        <div className="flex flex-col w-1/3 p-4 bg-white rounded-lg drop-shadow-lg translate-x-4">
+        <div className="flex flex-col w-1/3 p-4 bg-white rounded-lg drop-shadow-lg translate-x-10">
           <h3 className="flex items-center justify-center mb-1 text-2xl font-semibold text-black dark:text-white tracking-tight">
             Dallas Astronomy Club
             {/* <span className="bg-teal-100 text-zinc-700 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-darkBlack dark:text-neutral-200 ml-3">
@@ -77,8 +77,8 @@ const Projects = () => {
             </div>
         </div>
 
-          <div className="w-2/3 inline-flex flex-col items-center p-8 py-8 text-gray-900 bg-slate-400 rounded-lg dark:bg-darkBlack dark:hover:bg-black ">
-            <img src={Nasa} alt="Orderly" className="hover:scale-125 grayscale hover:grayscale-0 ease-in-out duration-300 rounded-md drop-shadow-2xl shadow-blackest" />
+          <div className="w-2/3 inline-flex flex-col items-center p-8 py-8 pl-20 text-gray-900 bg-indigo-50 rounded-lg dark:bg-darkBlack dark:hover:bg-black ">
+            <img src={Nasa} alt="Orderly" className="hover:scale-125 ease-in-out duration-300 rounded-md drop-shadow-2xl" />
           </div>
       </div>
 
