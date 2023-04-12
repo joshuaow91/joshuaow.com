@@ -1,5 +1,6 @@
 import React from "react";
 import Self from './assets/self.jpg'
+import Ai from './assets/aiself.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithubSquare, faLinkedin, faTwitterSquare } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons';
@@ -23,7 +24,7 @@ const About = () => {
             </div> */}
 
           <div className="flex flex-col items-center gap-4 bg-indigo-50 p-4 rounded-lg rounded-l-none ">
-            <img src={Self} className='rounded-lg grayscale object-cover object-center w-full h-auto max-w-md max-h-md' />
+            <img src={Ai} className='rounded-lg grayscale object-cover object-center w-full h-auto max-w-md max-h-md' />
             {/* <p className="font-montserrat text-sm tracking-wider text-zinc-700 dark:text-white">
                 I specialize in the meticulous design and development of visually appealing applications that prioritize scalability and performance.
             </p> */}
