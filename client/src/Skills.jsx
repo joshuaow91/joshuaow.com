@@ -8,7 +8,7 @@ const Skills = () => {
     return (
         <div className="grid grid-cols-1 m-8 lg:grid-cols-3 gap-8 font-light">
 
-            <div className="bg-indigo-50 hover:bg-zinc-100 dark:bg-darkBlack drop-shadow-lg shadow-black rounded-lg p-4 max-w-s flex items-center gap-4">
+            <div className="bg-indigo-50 hover:bg-zinc-100 hover:scale-105 ease-in-out duration-300 dark:bg-darkBlack drop-shadow-lg shadow-black rounded-lg p-4 max-w-s flex items-center gap-4">
                 <FontAwesomeIcon icon={faLaptopCode} className="text-6xl bg-teal-50 rounded-full text-slate-400 p-6 h-18 w-16"/>
                 <p className="text-gray-600 dark:text-gray-300 text-sm flex flex-col">
                 <span className="text-lg font-semibold dark:text-white tracking-tight">Web/App Devolpment</span>
@@ -16,7 +16,7 @@ const Skills = () => {
                 to Full Stack Web Applications.
                 </p>
             </div>
-            <div className="bg-indigo-50 hover:bg-zinc-100 dark:bg-darkBlack drop-shadow-lg shadow-black rounded-lg p-4 max-w-s flex items-center gap-4">
+            <div className="bg-indigo-50 hover:bg-zinc-100 hover:scale-105 ease-in-out duration-300 dark:bg-darkBlack drop-shadow-lg shadow-black rounded-lg p-4 max-w-s flex items-center gap-4">
                 <FontAwesomeIcon icon={faPaperPlane} className="text-6xl bg-teal-50 rounded-full text-slate-400 p-6 h-18 w-16"/>
                 <p className="text-gray-600 dark:text-gray-300 text-sm flex flex-col">
                 <span className="text-lg font-semibold dark:text-white tracking-tight">Responsive Design</span>
@@ -24,7 +24,7 @@ const Skills = () => {
                 is logical and helps users (and search engines) browse efficiently.
                 </p>
             </div>
-            <div className="bg-indigo-50 hover:bg-zinc-100 dark:bg-darkBlack drop-shadow-lg shadow-black rounded-lg p-4 max-w-s flex items-center gap-4">
+            <div className="bg-indigo-50 hover:bg-zinc-100 hover:scale-105 ease-in-out duration-300 dark:bg-darkBlack drop-shadow-lg shadow-black rounded-lg p-4 max-w-s flex items-center gap-4">
                 <FontAwesomeIcon icon={faRocket} className="text-6xl bg-teal-50 rounded-full text-slate-400 p-6 h-18 w-16"/>
                 <p className="text-gray-600 dark:text-gray-300 text-sm flex flex-col">
                 <span className="text-lg font-semibold dark:text-white tracking-tight">UI/UX Design</span>
