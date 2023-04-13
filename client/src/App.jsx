@@ -25,13 +25,13 @@ function App() {
         <Skills />
         </div>
       </div>
-      <div className=" p-10 md:p-20 md:mt-20 mb-10" id='projects-section'>
+      <div className=" md:p-14 p-5  md:mt-28 mb-10" id='projects-section'>
         <Projects />
       </div>
       <div className=''>
         <Contact />
       </div>
-      <div className='bg-teal-500'>
+      <div className=''>
         <Footer />
       </div>
     </div>

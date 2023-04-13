@@ -17,17 +17,8 @@ const About = () => {
     return (
         <>
         <div className="flex flex-col-reverse gap-2  bg-indigo-50 dark:bg-blacker max-w-xs m-4 rounded-lg drop-shadow-md shadow-black">
-            {/* <div className="flex items-center p-4">
-                <p className="font-montserrat text-sm tracking-wider text-zinc-700 dark:text-white">
-                    I specialize in the meticulous design and development of visually appealing applications that prioritize scalability and performance.
-                </p>
-            </div> */}
-
           <div className="flex flex-col items-center gap-4 bg-indigo-50 p-4 rounded-lg rounded-l-none ">
             <img src={Ai} className='rounded-lg grayscale object-cover object-center w-full h-auto max-w-md max-h-md' />
-            {/* <p className="font-montserrat text-sm tracking-wider text-zinc-700 dark:text-white">
-                I specialize in the meticulous design and development of visually appealing applications that prioritize scalability and performance.
-            </p> */}
             <ul className="space-x-2 flex">
                 {socials.map((social, index) => (
                 <li key={index}>

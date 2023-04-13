@@ -37,7 +37,7 @@ import bgImage from './assets/parallax.svg'
 
     return (
         <>
-        <div className="relative isolate overflow-hidden bg-teal-500 dark:bg-blacker h-96  px-5  font-light "
+        <div className="relative isolate overflow-hidden bg-teal-500 dark:bg-blacker md:h-96 h-[450px] px-5 font-light "
           style={{
             backgroundImage: `url(${bgImage})`,
             backgroundSize: "cover",
@@ -55,9 +55,9 @@ import bgImage from './assets/parallax.svg'
             <dl className="grid grid-cols-2 gap-4 sm:mt-10 sm:grid-cols-3 lg:grid-cols-5 place-items-center">
                 {stats.map((skill, index) => (
                 <div key={`${skill.name}-${index}`} className="flex flex-col-reverse">
-                <dt className="text-lg text-center text-teal-800 dark:text-zinc-600">{skill.name}</dt>
+                <dt className="hidden md:block text-lg text-center text-teal-800 dark:text-zinc-600">{skill.name}</dt>
                 <dd className="text-lg font-bold leading-9 tracking-tigt text-teal-600 hover:text-teal-400 dark:text-white text-center">
-                    <FontAwesomeIcon icon={skill.icon} className="h-10 w-10 md:h-20 md:w-20" />
+                    <FontAwesomeIcon icon={skill.icon} className="h-20 w-20" />
                 </dd>
                 </div>
                 ))}
