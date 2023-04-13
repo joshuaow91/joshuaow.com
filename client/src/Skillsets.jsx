@@ -9,7 +9,7 @@ import bgImage from './assets/parallax.svg'
     const [bgPositionY, setBgPositionY] = useState(-250);
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      const maxScrollPosition = 950;
+      const maxScrollPosition = 1950;
   
       if (scrollPosition <= maxScrollPosition) {
         setBgPositionY(scrollPosition * 0.25 - 250);
@@ -37,7 +37,7 @@ import bgImage from './assets/parallax.svg'
 
     return (
         <>
-        <div className="relative isolate overflow-hidden bg-teal-500 dark:bg-teal-950 md:h-96 h-[450px] px-5 font-light "
+        <div className="relative isolate overflow-hidden bg-teal-500 dark:bg-teal-800 md:h-96 h-[450px] px-5 font-light "
           style={{
             backgroundImage: `url(${bgImage})`,
             backgroundSize: "cover",

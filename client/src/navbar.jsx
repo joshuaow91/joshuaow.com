@@ -33,9 +33,9 @@ const Navigation = () => {
         </button>
       </div>
 
-      <div className={`fixed right-0 flex -top-16  mt-20 mr-4 max-w-sm text-zinc-700 bg-indigo-50 dark:bg-black dark:text-white rounded-lg drop-shadow-lg transform transition-transform duration-300 ${isMenuOpen ? 'scale-100' : 'scale-0'}`}>
+      <div className={`fixed right-0 flex -top-16  mt-20 mr-4 max-w-sm text-zinc-700 bg-indigo-50 dark:bg-black dark:text-zinc-300 rounded-lg drop-shadow-lg transform transition-transform duration-300 ${isMenuOpen ? 'scale-100' : 'scale-0'}`}>
         <div className='flex flex-col'>
-          <div className="py-3 px-4 justify-start items-start rounded-t-lg flex bg-teal-500">
+          <div className="py-3 px-4 justify-start items-start rounded-t-lg flex bg-teal-500 dark:bg-teal-800">
             <Toggle />
           </div>
           <div className='flex'>
@@ -47,7 +47,7 @@ const Navigation = () => {
                 duration={500}
                 spy={true}
                 offset={-50}
-                className="block py-2.5 px-4 cursor-pointer lowercase transition duration-200 hover:text-zinc-800 hover:underline first-of-type:rounded-bl-lg last-of-type:rounded-br-lg"
+                className="block py-2.5 px-4 cursor-pointer lowercase transition duration-200 hover:text-zinc-500 hover:underline first-of-type:rounded-bl-lg last-of-type:rounded-br-lg"
                 onClick={toggleMenu}
               >
               {label}

@@ -15,7 +15,7 @@ const Projects = () => {
 
       <div className="relative lg:border-l lg:border-t border-gray-200 dark:border-darkBlack flex flex-col lg:gap-16 p-4 lg:p-0">
         <div className="flex flex-col items-start ">
-          <span className="hidden absolute lg:flex items-center justify-center w-7 h-7 bg-slate-200 text-zinc-700 rounded-full -left-3 -top-3 ring-8 ring-slate-100 dark:ring-gray-900 dark:bg-teal-500 dark:text-white">
+          <span className="hidden absolute lg:flex items-center justify-center w-7 h-7 bg-slate-200 text-zinc-700 rounded-full -left-3 -top-3 ring-8 ring-slate-100 dark:ring-gray-900 dark:bg-teal-800 dark:text-white">
             <FontAwesomeIcon icon={faCode} />
           </span>
         </div>
@@ -23,7 +23,7 @@ const Projects = () => {
       <div className="flex flex-col-reverse lg:flex-row justify-evenly items-center">
         <div className="flex flex-col lg:w-1/3 p-4 bg-white rounded-lg drop-shadow-lg lg:translate-x-10 mb-10 lg:mb-0 dark:bg-black">
           <h3 className="flex items-center flex-col gap-4 justify-center mb-1 text-4xl font-semibold text-black dark:text-white tracking-tight">
-            Orderly.app
+            Orderly.pro
             <span className="bg-teal-100 text-zinc-700 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-darkBlack dark:text-neutral-200 ml-3">
               Collaborative 
             </span>
@@ -38,10 +38,10 @@ const Projects = () => {
             <FontAwesomeIcon icon={faNodeJs} className="h-8 w-8" />
           </p>
           <div className="flex w-full justify-evenly">
-              <button className=" my-4 p-3 px-8 text-black dark:text-black border-4 hover:border-slate-300  text-sm tracking-wider rounded-lg hover:scale-105 ease-in-out duration-300">
+              <button className=" my-4 p-3 px-8 text-black dark:text-zinc-300 border-4 hover:border-slate-300  text-sm tracking-wider rounded-lg hover:scale-105 ease-in-out duration-300">
                 Live Demo
               </button>
-              <button className=" my-4 p-2 px-8 text-black dark:text-black border-4 hover:border-slate-300 text-sm tracking-wider rounded-lg hover:scale-105 ease-in-out duration-300">
+              <button className=" my-4 p-2 px-8 text-black dark:text-zinc-300 border-4 hover:border-slate-300 text-sm tracking-wider rounded-lg hover:scale-105 ease-in-out duration-300">
                 GitHub
               </button>
             </div>
@@ -67,10 +67,10 @@ const Projects = () => {
             <FontAwesomeIcon icon={faHtml5} className="h-8 w-8" />
           </p>
           <div className="flex w-full justify-evenly">
-              <button className=" my-4 p-3 px-8 text-black dark:text-black border-4 hover:border-slate-300  text-sm tracking-wider rounded-lg hover:scale-105 ease-in-out duration-300">
+              <button className=" my-4 p-3 px-8 text-black dark:text-zinc-300 border-4 hover:border-slate-300  text-sm tracking-wider rounded-lg hover:scale-105 ease-in-out duration-300">
                 Live Demo
               </button>
-              <button className=" my-4 p-2 px-8 text-black dark:text-black border-4 hover:border-slate-300 text-sm tracking-wider rounded-lg hover:scale-105 ease-in-out duration-300">
+              <button className=" my-4 p-2 px-8 text-black dark:text-zinc-300 border-4 hover:border-slate-300 text-sm tracking-wider rounded-lg hover:scale-105 ease-in-out duration-300">
                 GitHub
               </button>
             </div>
