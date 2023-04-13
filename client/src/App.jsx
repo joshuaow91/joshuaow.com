@@ -28,7 +28,7 @@ function App() {
       <div className=" md:p-14 p-5 mb-10" id='projects-section'>
         <Projects />
       </div>
-      <div className='md:mt-20'>
+      <div className='md:mt-20 '>
         <Contact />
       </div>
       <div className=''>
