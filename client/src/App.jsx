@@ -12,7 +12,7 @@ import Skills from './Skills'
 function App() {
 
   return (
-    <div className='bg-white flex dark:bg-black flex-col'>
+    <div className='bg-white flex dark:bg-blacker flex-col'>
       <div className='' id='home'>
         <Navigation/>
       </div>

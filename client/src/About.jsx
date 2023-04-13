@@ -17,13 +17,13 @@ const About = () => {
     return (
         <>
         <div className="flex flex-col-reverse gap-2  bg-indigo-50 dark:bg-blacker max-w-xs m-4 rounded-lg drop-shadow-md shadow-black">
-          <div className="flex flex-col items-center gap-4 bg-indigo-50 p-4 rounded-lg rounded-l-none ">
+          <div className="flex flex-col items-center gap-4 bg-indigo-50 p-4 rounded-lg dark:bg-zinc-800 ">
             <img src={Ai} className='rounded-lg grayscale object-cover object-center w-full h-auto max-w-md max-h-md' />
             <ul className="space-x-2 flex">
                 {socials.map((social, index) => (
                 <li key={index}>
                   <a href={social.href} target="_blank" rel="noopener noreferrer">
-                    <FontAwesomeIcon icon={social.icon} className="h-8 w-8 text-zinc-300 hover:text-teal-500 dark:text-slate-400 dark:hover:text-slate-300" />
+                    <FontAwesomeIcon icon={social.icon} className="h-8 w-8 text-zinc-300 hover:text-teal-500 dark:text-blackest dark:hover:text-black" />
                   </a>
                 </li>
                 ))}

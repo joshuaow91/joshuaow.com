@@ -47,7 +47,7 @@ const Projects = () => {
             </div>
         </div>
 
-          <div className="mb-6 lg:mb-0 lg:w-2/3 inline-flex flex-col items-center p-6 lg:p-8 lg:py-14 lg:pl-20 text-gray-900 bg-teal-500 rounded-lg dark:bg-darkBlack dark:hover:bg-black ">
+          <div className="mb-6 lg:mb-0 lg:w-2/3 inline-flex flex-col items-center p-6 lg:p-8 lg:py-14 lg:pl-20 text-gray-900 bg-teal-400 rounded-lg dark:bg-darkBlack dark:hover:bg-black ">
             <img src={Orderly} alt="Orderly" className="hover:scale-125 ease-in-out duration-300 rounded-md drop-shadow-2xl shadow-blackest" />
           </div>
       </div>
@@ -76,7 +76,7 @@ const Projects = () => {
             </div>
         </div>
 
-          <div className="mb-6 lg:mb-0 lg:w-2/3 inline-flex flex-col items-center p-6 lg:p-8 lg:py-8 lg:pl-20 text-gray-900 bg-teal-500 rounded-lg dark:bg-darkBlack dark:hover:bg-black ">
+          <div className="mb-6 lg:mb-0 lg:w-2/3 inline-flex flex-col items-center p-6 lg:p-8 lg:py-8 lg:pl-20 text-gray-900 bg-teal-400 rounded-lg dark:bg-darkBlack dark:hover:bg-black ">
             <img src={Nasa} alt="Orderly" className="hover:scale-125 ease-in-out duration-300 rounded-md drop-shadow-2xl" />
           </div>
       </div>
