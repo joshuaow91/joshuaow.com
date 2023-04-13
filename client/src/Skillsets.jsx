@@ -1,79 +1,77 @@
 import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHtml5, faCss3, faJs, faReact, faNodeJs,  } from "@fortawesome/free-brands-svg-icons";
-import TwindLogo from './assets/tailwind.svg'
-import bgImage from './assets/parallax.svg'
+import { faHtml5, faCss3, faJs, faReact, faNodeJs } from "@fortawesome/free-brands-svg-icons";
+import Skills from "./Skills";
+import Bg from './assets/parabg.svg'
 
-  
-  const Skillsets = () => {
-    const [bgPositionY, setBgPositionY] = useState(-250);
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-      const maxScrollPosition = 1950;
-  
-      if (scrollPosition <= maxScrollPosition) {
-        setBgPositionY(scrollPosition * 0.25 - 250);
-      } else {
-        setBgPositionY(maxScrollPosition * 0.25 - 950);
-      }
-    };
-  
-    useEffect(() => {
-      window.addEventListener("scroll", handleScroll);
-      return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
-    
+const Skillsets = () => {
+  const [bgPositionY, setBgPositionY] = useState(-200);
 
-      const stats = [
-        { name: 'JavaScript', icon: faJs },
-        { name: 'React', icon: faReact },
-        { name: 'HTML', icon: faHtml5 },
-        { name: 'CSS', icon: faCss3 },
-        { name: 'Node.js', icon: faNodeJs },
-        // { name: 'MongoDB', icon: faCode}
-        // { name: 'Tailwind CSS', icon: }
-      ];
-      
+  const handleScroll = () => {
+    const scrollPosition = window.scrollY;
+    const maxScrollPosition = 1950;
 
-    return (
-        <>
-        <div className="relative isolate overflow-hidden bg-teal-500 dark:bg-teal-800 md:h-96 h-[450px] px-5 font-light "
-          style={{
-            backgroundImage: `url(${bgImage})`,
-            backgroundSize: "cover",
-            backgroundPositionY: `${bgPositionY}px`,
-            backgroundRepeat: 'no-repeat',
-          }}>
-        <div className="relative z-10">
-        <div className="absolute top-0 left-0 w-full h-full z-(-1)">
-        {/* style={{ transform: `translateY(${bgPositionY}px)` }}> */}
-        <div className="mx-auto max-w-7xl px-2">
-          <div className="mx-auto max-full flex justify-center">
-            <h2 className="text-6xl font-bold tracking-tight text-center text-zinc-700 dark:text-zinc-300 uppercase mt-8">Skillsets</h2>
-          </div>
-          <div className="mx-auto mt-8 max-w-2xl lg:mx-0 lg:max-w-none">
-            <dl className="grid grid-cols-2 gap-4 sm:mt-10 sm:grid-cols-3 lg:grid-cols-5 place-items-center">
-                {stats.map((skill, index) => (
-                <div key={`${skill.name}-${index}`} className="flex flex-col-reverse">
-                <dt className="hidden md:block text-lg text-center text-teal-800 dark:text-zinc-600">{skill.name}</dt>
-                <dd className="text-lg font-bold leading-9 tracking-tigt text-teal-600 hover:text-teal-400 dark:text-zinc-300 dark:hover:text-zinc-100 text-center">
-                    <FontAwesomeIcon icon={skill.icon} className="h-20 w-20" />
-                </dd>
-                </div>
-                ))}
-                {/* <dt className="text-lg flex flex-col items-center mb-3 text-teal-800 dark:text-zinc-600"><img src={TwindLogo} className="w-16 h-16 " />Tailwind</dt> */}
-            </dl>
-          </div>
-          </div>
+    if (scrollPosition <= maxScrollPosition) {
+      setBgPositionY(scrollPosition * 0.25 - 200);
+    } else {
+      setBgPositionY(maxScrollPosition * 0.25 - 950);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const stats = [
+    { name: "JavaScript", icon: faJs },
+    { name: "React", icon: faReact },
+    { name: "HTML", icon: faHtml5 },
+    { name: "CSS", icon: faCss3 },
+    { name: "Node.js", icon: faNodeJs },
+  ];
+
+  return (
+    <>
+      <div className="flex justify-center">
+        <h2 className="text-6xl font-bold tracking-tight text-center text-zinc-700 dark:text-zinc-300 uppercase md:mb-10">
+          Skillsets
+        </h2>
+      </div>
+
+      <div
+        className="relative flex flex-col rounded-lg m-10 bg-teal-500 dark:bg-teal-800 md:h-96 font-light"
+        style={{
+          backgroundImage: `url(${Bg})`,
+          backgroundSize: "contain",
+          backgroundPositionY: `${bgPositionY}px`,
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        <div className="md:-translate-y-16">
+          <Skills />
+        </div>
+        <div className="flex flex-wrap justify-center gap-4 md:gap-14 md:translate-y-12 p-4 md:p-0 ">
+          {stats.map((skill, index) => (
+            <ul key={`${skill.name}-${index}`} className="flex flex-col-reverse">
+              <li className="text-lg font-bold tracking-tigt text-teal-700 hover:text-teal-400 dark:text-zinc-300 dark:hover:text-zinc-100">
+                <FontAwesomeIcon icon={skill.icon} className="h-24 w-24" />
+              </li>
+            </ul>
+          ))}
+          <div className="flex gap-8">
+            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className="h-24 w-24 fill-current text-teal-700 hover:text-teal-400 dark:text-zinc-300 dark:hover:text-zinc-100">
+              <title>Tailwind CSS</title>
+              <path d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z" />
+            </svg>
           </div>
         </div>
       </div>
-      </>
-    )
-  }
-  
-  export default Skillsets;
-  
+    </>
+  );
+};
+
+export default Skillsets;
 
 
 
@@ -86,20 +84,8 @@ import bgImage from './assets/parallax.svg'
 
 
 
-              {/* <p className="mt-6 text-md leading-8 text-white">
-                As a versatile web developer, I possess a wide range of skills that enable me to create visually appealing and 
-                highly functional web applications. My skill sets include, but are not limited to:
-            </p>
-            <ul className="list-disc pl-6 text-white py-5">
-                <li>Expertise in front-end development using React and JavaScript</li>
-                <li>Proficiency in crafting responsive and engaging designs with CSS and HTML</li>
-                <li>Experience with back-end technologies, such as Node.js and Express</li>
-                <li>Knowledge of version control systems, such as Git and GitHub</li>
-                <li>Familiarity with web performance optimization techniques</li>
-                <li>Strong problem-solving abilities and a keen eye for detail</li>
-            </ul>
-            <p className="text-md leading-8 text-white">
-                I'm constantly striving to expand my skill set and stay up-to-date with the latest technologies and 
-                best practices in web development. This enables me to deliver top-notch solutions for my clients and 
-                contribute effectively to team projects.
-            </p> */}
+
+
+                  {/* <li className="hidden md:block text-lg text-center text-teal-800 dark:text-zinc-600">
+                    {skill.name}
+                  </li> */}
