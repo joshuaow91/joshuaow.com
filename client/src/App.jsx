@@ -12,7 +12,7 @@ import Skills from './Skills'
 function App() {
 
   return (
-    <div className='bg-white flex dark:bg-blacker flex-col'>
+    <div className='bg-white flex dark:bg-blackest flex-col'>
       <div className='' id='home'>
         <Navigation/>
       </div>
@@ -21,9 +21,6 @@ function App() {
       </div>
       <div className=''>
         <Skillsets />
-        <div className=' lg:-translate-y-28'>
-        <Skills />
-        </div>
       </div>
       <div className=" md:p-14 p-5 mb-10" id='projects-section'>
         <Projects />

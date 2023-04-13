@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Mode from './assets/mode.png';
 
 const Toggle = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -16,18 +17,18 @@ const Toggle = () => {
   };
 
   return (
-    <label className="relative inline-flex items-center cursor-pointer">
-      <input
-        type="checkbox"
-        className="sr-only peer"
-        checked={isDarkMode}
-        onChange={toggleDarkMode}
+    <button
+      className="focus:outline-none"
+      onClick={toggleDarkMode}
+      aria-label="Toggle dark mode"
+    >
+      <img
+        src={Mode}
+        className={`h-10 w-10 transform transition-transform duration-500 ${
+          isDarkMode ? 'rotate-180' : ''
+        }`}
       />
-      <div className="w-11 h-6 bg-slate-500 peer-focus:outline-none peer-focus:ring-none peer-focus:ring-none dark:peer-focus:ring-none rounded-full peer dark:bg-teal-400 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-pink500"></div>
-      <span className="ml-3 text-sm font-medium text-indigo-50 dark:text-gray-300">
-        {isDarkMode ? 'light mode' : 'dark mode'}
-      </span>
-    </label>
+    </button>
   );
 };
 

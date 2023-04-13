@@ -20,6 +20,9 @@ const Navigation = () => {
 
   return (
     <nav className="fixed w-full top-0 z-10">
+      <div className='fixed top-4 left-4'> 
+        <Toggle />
+      </div>
       <div className="fixed top-4 right-4 z-20">
         <button
           onClick={toggleMenu}
@@ -36,7 +39,6 @@ const Navigation = () => {
       <div className={`fixed right-0 flex -top-16  mt-20 mr-4 max-w-sm text-zinc-700 bg-indigo-50 dark:bg-black dark:text-zinc-300 rounded-lg drop-shadow-lg transform transition-transform duration-300 ${isMenuOpen ? 'scale-100' : 'scale-0'}`}>
         <div className='flex flex-col'>
           <div className="py-3 px-4 justify-start items-start rounded-t-lg flex bg-teal-500 dark:bg-teal-800">
-            <Toggle />
           </div>
           <div className='flex'>
             {navLinks.map(([to, label]) => (
