@@ -37,7 +37,7 @@ import bgImage from './assets/parallax.svg'
 
     return (
         <>
-        <div className="relative isolate overflow-hidden bg-teal-500 dark:bg-blackest md:h-96 h-[450px] px-5 font-light "
+        <div className="relative isolate overflow-hidden bg-teal-500 dark:bg-teal-950 md:h-96 h-[450px] px-5 font-light "
           style={{
             backgroundImage: `url(${bgImage})`,
             backgroundSize: "cover",
