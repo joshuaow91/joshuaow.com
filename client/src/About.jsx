@@ -1,5 +1,5 @@
 import React from "react";
-import Ai from './assets/aiself.jpg';
+// import Ai from './assets/aiself.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithubSquare, faLinkedin, faTwitterSquare } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons';
@@ -17,7 +17,7 @@ const About = () => {
         <>
         <div className="flex flex-col-reverse gap-2  bg-indigo-50 dark:bg-blacker max-w-xs m-4 rounded-lg drop-shadow-md shadow-black">
           <div className="flex flex-col items-center gap-4 bg-indigo-50 p-4 rounded-lg dark:bg-teal-900 ">
-            <img src={Ai} className='rounded-lg grayscale object-cover object-center w-full h-auto max-w-md max-h-md' />
+            <img src='/src/assets/aiself.jpg' className='rounded-lg grayscale object-cover object-center w-full h-auto max-w-md max-h-md' />
             <ul className="space-x-2 flex">
                 {socials.map((social, index) => (
                 <li key={index}>
