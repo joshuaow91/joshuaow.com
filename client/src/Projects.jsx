@@ -15,7 +15,7 @@ const Projects = () => {
 
       <div className="relative lg:border-l lg:border-t border-gray-200 dark:border-darkBlack flex flex-col lg:gap-16 p-4 lg:p-0">
         <div className="flex flex-col items-start ">
-          <span className="hidden absolute lg:flex items-center justify-center w-7 h-7 bg-slate-200 text-zinc-700 rounded-full -left-3 -top-3 ring-8 ring-slate-100 dark:ring-gray-900 dark:bg-teal-800 dark:text-white">
+          <span className="hidden absolute lg:flex items-center justify-center w-7 h-7 bg-teal-500 text-zinc-100 rounded-full -left-3 -top-3 ring-8 ring-teal-100 dark:ring-gray-900 dark:bg-teal-800 dark:text-white">
             <FontAwesomeIcon icon={faCode} />
           </span>
         </div>
@@ -47,7 +47,7 @@ const Projects = () => {
             </div>
         </div>
 
-          <div className="mb-6 lg:mb-0 lg:w-2/3 inline-flex flex-col items-center p-6 lg:p-8 lg:py-14 lg:pl-20 text-gray-900 bg-teal-400 rounded-lg dark:bg-teal-700">
+          <div className="mb-6 lg:mb-0 lg:w-2/3 inline-flex flex-col items-center p-6 lg:p-8 lg:py-14 lg:pl-20 text-gray-900 bg-teal-500 rounded-lg dark:bg-teal-700">
             <img src={Orderly} alt="Orderly" className="hover:scale-125 ease-in-out duration-300 rounded-md drop-shadow-2xl shadow-blackest" />
           </div>
       </div>
@@ -76,7 +76,7 @@ const Projects = () => {
             </div>
         </div>
 
-          <div className="mb-6 lg:mb-0 lg:w-2/3 inline-flex flex-col items-center p-6 lg:p-8 lg:py-8 lg:pl-20 text-gray-900 bg-teal-400 rounded-lg dark:bg-teal-700">
+          <div className="mb-6 lg:mb-0 lg:w-2/3 inline-flex flex-col items-center p-6 lg:p-8 lg:py-8 lg:pl-20 text-gray-900 bg-teal-500 rounded-lg dark:bg-teal-700">
             <img src={Nasa} alt="Orderly" className="hover:scale-125 ease-in-out duration-300 rounded-md drop-shadow-2xl" />
           </div>
       </div>
