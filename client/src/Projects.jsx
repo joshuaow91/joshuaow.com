@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import Orderly from './assets/orderly.png';
 import Nasa from './assets/nasa.png';
-import Img from './assets/img.png';
 
 const Projects = () => {
   return (

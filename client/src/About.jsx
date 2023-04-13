@@ -1,6 +1,5 @@
 import React from "react";
-import Self from './assets/self.jpg'
-import Ai from './assets/aiself.jpg'
+import Ai from './assets/aiself.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithubSquare, faLinkedin, faTwitterSquare } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons';
