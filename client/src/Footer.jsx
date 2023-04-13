@@ -9,7 +9,7 @@ const Footer = () => {
       <footer className="bg-white rounded-lg drop-shadow-md m-4 dark:bg-blacker">
         <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
             <span className="text-xs text-slate-400 sm:text-center dark:text-gray-300">
-                Made with love by Joshua Ow using <a href="https://react.dev" target="_blank" className="hover:underline">React</a> & <a href="https://tailwindcss.com" target="_blank" className="hover:underline">Tailwind</a>.
+                Made by Joshua Ow with <a href="https://react.dev" target="_blank" className="hover:underline">React</a> & <a href="https://tailwindcss.com" target="_blank" className="hover:underline">Tailwind</a>.
             </span>
         <ul className="flex flex-wrap items-center mt-3 sm:mt-0 space-x-2">
           <li>
