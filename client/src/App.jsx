@@ -19,16 +19,16 @@ function App() {
       <div className='flex md:flex-row justify-evenly items-center min-h-screen'> 
         <Hero />
       </div>
-      <div className='lg:relative'>
+      <div className=''>
         <Skillsets />
-        <div className=' lg:absolute lg:-bottom-32 xl:-bottom-28'>
+        <div className=' lg:-translate-y-28'>
         <Skills />
         </div>
       </div>
-      <div className=" md:p-14 p-5  md:mt-28 mb-10" id='projects-section'>
+      <div className=" md:p-14 p-5 mb-10" id='projects-section'>
         <Projects />
       </div>
-      <div className=''>
+      <div className='md:mt-20'>
         <Contact />
       </div>
       <div className=''>
