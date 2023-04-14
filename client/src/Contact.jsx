@@ -22,7 +22,7 @@ const Contact = () => {
                 <input
                     type="email"
                     name="email"
-                    className="drop-shadow-md bg-gray-50 border border-gray-300 outline-indigo-500 text-zinc-700 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-black dark:border-darkBlack dark:placeholder-gray-200 dark:text-zinc-200 dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                    className="drop-shadow-md bg-gray-50 border border-gray-300 outline-teal-500 text-zinc-700 text-sm rounded-lg focus:ring-teal-500 focus:border-teal-500 block w-full p-2.5 dark:bg-black dark:border-darkBlack dark:placeholder-gray-200 dark:text-zinc-200 dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
                     placeholder="name@domain.com"
                     required
                 />
@@ -34,7 +34,7 @@ const Contact = () => {
                 <input
                     type="text"
                     name="subject"
-                    className="block p-3 w-full text-sm text-zinc-700 bg-gray-50 rounded-lg border border-gray-300 outline-pink-500 drop-shadow-md focus:ring-pink-500 focus:border-primary-500 dark:bg-black dark:border-darkBlack dark:placeholder-gray-200 dark:text-zinc-200 dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                    className="block p-3 w-full text-sm text-zinc-700 bg-gray-50 rounded-lg border border-gray-300 outline-teal-500 drop-shadow-md focus:ring-teal-500 focus:border-teal-500 dark:bg-black dark:border-darkBlack dark:placeholder-gray-200 dark:text-zinc-200 dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
                     placeholder="How can I help you?"
                     required
                 />
@@ -46,7 +46,7 @@ const Contact = () => {
                 <textarea
                     name="message"
                     rows="6"
-                    className="block p-2.5 w-full text-sm text-zinc-700 bg-gray-50 rounded-lg drop-shadow-md border border-gray-300 outline-pink-500 focus:ring-primary-500 focus:border-none dark:bg-black dark:border-darkBlack dark:placeholder-gray-200 dark:text-zinc-200 dark:focus:ring-primary-500 dark:focus:border-none"
+                    className="block p-2.5 w-full text-sm text-zinc-700 bg-gray-50 rounded-lg drop-shadow-md border border-gray-300 outline-teal-500 focus:ring-teal-500 focus:border-none dark:bg-black dark:border-darkBlack dark:placeholder-gray-200 dark:text-zinc-200 dark:focus:ring-primary-500 dark:focus:border-none"
                     placeholder="Share your thoughts, ideas, or questions..."
                 ></textarea>
             </div>
