@@ -21,9 +21,9 @@ const Projects = () => {
 
       <div className="flex flex-col-reverse lg:flex-row justify-evenly items-center">
         <div className="flex flex-col lg:w-1/3 p-4 bg-white rounded-lg drop-shadow-lg lg:translate-x-10 mb-10 lg:mb-0 dark:bg-black">
-          <h3 className="flex items-center flex-col gap-4 justify-center mb-1 text-4xl font-semibold text-black dark:text-white tracking-tight">
+          <h2 className="flex items-center flex-col gap-4 justify-center mb-1 text-4xl font-semibold text-black dark:text-white tracking-tight">
             Orderly.pro
-          </h3>
+          </h2>
           <p className="mb-4 text-md font-light text-zinc-600 dark:text-gray-400 lg:justify-center flex p-4 indent-3">
           Orderly is an application that helps businesses automate product orders when their in-stock quantity reaches a target level. Upon placing an order, users receive notifications with the expected arrival dates.
           </p>
@@ -56,11 +56,11 @@ const Projects = () => {
 
       <div className="flex flex-col-reverse lg:flex-row justify-evenly items-center">
         <div className="flex flex-col lg:w-1/3 p-4 bg-white rounded-lg drop-shadow-lg lg:translate-x-10 dark:bg-black">
-          <h3 className="flex items-center justify-center mb-1 text-2xl font-semibold text-black dark:text-white tracking-tight">
+          <h2 className="flex items-center justify-center mb-1 text-2xl font-semibold text-black dark:text-white tracking-tight">
             Dallas Astronomy Club
             {/* <span className="bg-teal-100 text-zinc-700 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-darkBlack dark:text-neutral-200 ml-3">
             </span> */}
-          </h3>
+          </h2>
           <p className="mb-4 text-md font-light text-zinc-600 dark:text-gray-400 lg:justify-center flex p-4 indent-3">
           This project features the NASA Picture of the Day by leveraging the NASA API and is designed with a strong emphasis on delivering a visually appealing and intuitive user experience, utilizing JavaScript, HTML, and CSS.          </p>
           <p className="mb-2 text-sm font-normal leading-none text-zinc-400 dark:text-gray-500 justify-evenly flex">
