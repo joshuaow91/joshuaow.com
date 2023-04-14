@@ -2,13 +2,17 @@ import React, { useState, useEffect } from 'react';
 import Mode from './assets/mode.png';
 
 const Toggle = () => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(
+    localStorage.getItem('darkMode') === 'true'
+  );
 
   useEffect(() => {
     if (isDarkMode) {
       document.documentElement.classList.add('dark');
+      localStorage.setItem('darkMode', 'true');
     } else {
       document.documentElement.classList.remove('dark');
+      localStorage.setItem('darkMode', 'false');
     }
   }, [isDarkMode]);
 
@@ -24,8 +28,8 @@ const Toggle = () => {
     >
       <img
         src={Mode}
-        className={`h-10 w-10 transform transition-transform duration-500 ${
-          isDarkMode ? 'rotate-180' : ''
+        className={`h-8 w-8 transform transition-transform duration-500 ${
+          isDarkMode ? 'rotate-180 invert' : ''
         }`}
       />
     </button>

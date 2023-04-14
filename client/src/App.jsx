@@ -28,7 +28,7 @@ function App() {
       <div className='md:mt-20 '>
         <Contact />
       </div>
-      <div className=''>
+      <div className='dark:bg-blacker'>
         <Footer />
       </div>
     </div>
