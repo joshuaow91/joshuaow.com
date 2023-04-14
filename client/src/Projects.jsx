@@ -8,11 +8,11 @@ import Nasa from './assets/nasa.avif';
 const Projects = () => {
   return (
     <>
-      <h1 className="flex justify-center font-montserrat font-bold mb-10 text-6xl tracking-tight text-zinc-700 dark:text-white">
+      <h1 className="flex justify-center font-montserrat font-bold  sm:mb-5 text-6xl tracking-tight text-zinc-700 dark:text-white">
         PROJECTS
       </h1>
 
-      <div className="relative lg:border-l lg:border-t border-gray-200 dark:border-darkBlack flex flex-col lg:gap-36 p-4 lg:p-0">
+      <div className="relative lg:border-l lg:border-t border-gray-200 dark:border-darkBlack flex flex-col gap-14 lg:gap-36 p-4 lg:p-0">
         <div className="flex flex-col items-start ">
           <span className="hidden absolute lg:flex items-center justify-center w-7 h-7 bg-teal-500 text-zinc-100 rounded-full -left-3 -top-3 ring-8 ring-teal-100 dark:ring-gray-900 dark:bg-teal-800 dark:text-white">
             <FontAwesomeIcon icon={faCode} />
@@ -50,7 +50,7 @@ const Projects = () => {
         </div>
 
           <div className="mb-6 lg:mb-0 lg:w-2/3 inline-flex flex-col items-center p-6 lg:p-8 lg:py-8 lg:pl-20 text-gray-900 bg-teal-500 rounded-lg dark:bg-teal-700">
-            <img src={Orderly} alt="Orderly" className="hover:scale-125 md:hover:-translate-x-12 ease-in-out duration-300 rounded-md drop-shadow-2xl shadow-blackest" loading="lazy"/>
+            <img src={Orderly} alt="Orderly" className="hover:scale-125 lg:hover:-translate-x-12 ease-in-out duration-300 rounded-md drop-shadow-2xl shadow-blackest" loading="lazy"/>
           </div>
       </div>
 
@@ -85,7 +85,7 @@ const Projects = () => {
         </div>
 
           <div className="mb-6 lg:mb-0 lg:w-2/3 inline-flex flex-col items-center p-6 lg:p-8 lg:py-8 lg:pl-20 text-gray-900 bg-teal-500 rounded-lg dark:bg-teal-700">
-            <img src={Nasa} alt="Orderly" className="hover:scale-125 md:hover:-translate-x-12 ease-in-out duration-300 rounded-md drop-shadow-2xl " loading="lazy" />
+            <img src={Nasa} alt="Orderly" className="hover:scale-125 lg:hover:-translate-x-12 ease-in-out duration-300 rounded-md drop-shadow-2xl " loading="lazy" />
           </div>
       </div>
 
