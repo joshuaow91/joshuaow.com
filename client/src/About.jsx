@@ -17,7 +17,7 @@ const About = () => {
         <>
         <div className="flex flex-col-reverse gap-2  bg-indigo-50 dark:bg-blacker max-w-xs m-4 rounded-lg drop-shadow-lg shadow-black" id="about">
           <div className="flex flex-col items-center gap-4 bg-indigo-50 p-4 rounded-lg dark:bg-zinc-800 ">
-            <img src={Ai} className='rounded-lg grayscale object-cover object-center w-64 h-64' alt="Ai Self Portrait"/>
+            <img src={Ai} className='rounded-lg grayscale object-cover object-center w-64 h-64' alt="Critical" loading="eager"/>
             <ul className="space-x-4 flex">
                 {socials.map((social, index) => (
                 <li key={index}>
