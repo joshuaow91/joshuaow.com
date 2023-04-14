@@ -22,7 +22,7 @@ const Contact = () => {
                 <input
                     type="email"
                     name="email"
-                    className="drop-shadow-md bg-gray-50 border border-gray-300 outline-teal-500 text-zinc-700 text-sm rounded-lg focus:ring-teal-500 focus:border-teal-500 block w-full p-2.5 dark:bg-black dark:border-darkBlack dark:placeholder-gray-200 dark:text-zinc-200 dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                    className="drop-shadow-md bg-gray-50 outline-teal-500 text-zinc-700 text-sm rounded-lg focus:ring-teal-500 focus:border-teal-500 block w-full p-2.5 dark:bg-black dark:placeholder-gray-200 dark:text-zinc-200 placeholder-zinc-600"
                     placeholder="name@domain.com"
                     required
                 />
@@ -34,7 +34,7 @@ const Contact = () => {
                 <input
                     type="text"
                     name="subject"
-                    className="block p-3 w-full text-sm text-zinc-700 bg-gray-50 rounded-lg border border-gray-300 outline-teal-500 drop-shadow-md focus:ring-teal-500 focus:border-teal-500 dark:bg-black dark:border-darkBlack dark:placeholder-gray-200 dark:text-zinc-200 dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                    className="block p-3 w-full text-sm text-zinc-700 bg-gray-50 rounded-lg  outline-teal-500 drop-shadow-md focus:ring-teal-500 focus:border-teal-500 dark:bg-black dark:placeholder-gray-200 dark:text-zinc-200 placeholder-zinc-600"
                     placeholder="How can I help you?"
                     required
                 />
@@ -46,14 +46,13 @@ const Contact = () => {
                 <textarea
                     name="message"
                     rows="6"
-                    className="block p-2.5 w-full text-sm text-zinc-700 bg-gray-50 rounded-lg drop-shadow-md border border-gray-300 outline-teal-500 focus:ring-teal-500 focus:border-none dark:bg-black dark:border-darkBlack dark:placeholder-gray-200 dark:text-zinc-200 dark:focus:ring-primary-500 dark:focus:border-none"
+                    className="block p-2.5 w-full text-sm text-zinc-700 bg-gray-50 rounded-lg drop-shadow-md outline-teal-500 focus:ring-teal-500 focus:border-none dark:bg-black dark:placeholder-gray-200 dark:text-zinc-200 placeholder-zinc-600"
                     placeholder="Share your thoughts, ideas, or questions..."
                 ></textarea>
             </div>
             <button
                 type="submit"
                 className="py-2.5 px-4 my-4 text-zinc-700 dark:text-zinc-200 border-4 border-teal-600 hover:border-teal-400 font-light text-sm rounded-lg hover:scale-105 ease-in-out duration-300"
-                // className="py-3 px-5 text-sm font-medium text-center text-zinc-200 rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
             >
                 Send message
                 </button>
