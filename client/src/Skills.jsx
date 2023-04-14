@@ -7,23 +7,23 @@ const Skills = () => {
     return (
         <div className="grid grid-cols-1 m-4 lg:grid-cols-3 gap-8 font-light">
 
-            <div className="bg-indigo-50 hover:bg-zinc-100 hover:scale-105 ease-in-out duration-300 dark:bg-zinc-800 drop-shadow-lg shadow-black rounded-lg p-4 max-w-s flex items-center gap-4">
+            <div className="bg-indigo-50 hover:bg-zinc-50 hover:scale-105 ease-in-out duration-300 dark:bg-zinc-800 drop-shadow-lg shadow-black rounded-lg p-4 max-w-s flex items-center gap-4">
                 <FontAwesomeIcon icon={faLaptopCode} className="text-6xl bg-teal-50 rounded-3xl text-slate-400 p-3 dark:bg-blacker dark:text-darkBlack"/>
-                <p className="text-gray-600 dark:text-zinc-600 text-sm flex flex-col">
+                <p className="text-gray-600 dark:text-zinc-400 text-sm flex flex-col">
                 <span className="text-lg font-semibold dark:text-zinc-300 tracking-tight">Web/App Dev</span>
                 Full Stack, encompassing wireframes, UI/UX design, and complete applications.
                 </p>
             </div>
-            <div className="bg-indigo-50 hover:bg-zinc-100 hover:scale-105 ease-in-out duration-300 dark:bg-zinc-800 drop-shadow-lg shadow-black rounded-lg p-4 max-w-s flex items-center gap-4">
+            <div className="bg-indigo-50 hover:bg-zinc-50 hover:scale-105 ease-in-out duration-300 dark:bg-zinc-800 drop-shadow-lg shadow-black rounded-lg p-4 max-w-s flex items-center gap-4">
                 <FontAwesomeIcon icon={faMobileScreen} className="text-6xl bg-teal-50 rounded-3xl text-slate-400 p-4  dark:bg-blacker dark:text-darkBlack"/>
-                <p className="text-gray-600 dark:text-zinc-600 text-sm flex flex-col">
+                <p className="text-gray-600 dark:text-zinc-400 text-sm flex flex-col">
                 <span className="text-lg font-semibold dark:text-zinc-300 tracking-tight">Responsive Design</span>
                 Aesthetically pleasing, efficient navigation for users & search engines on all devices.
                 </p>
             </div>
-            <div className="bg-indigo-50 hover:bg-zinc-100 hover:scale-105 ease-in-out duration-300 dark:bg-zinc-800 drop-shadow-lg shadow-black rounded-lg p-4 max-w-s flex items-center gap-4">
+            <div className="bg-indigo-50 hover:bg-zinc-50 hover:scale-105 ease-in-out duration-300 dark:bg-zinc-800 drop-shadow-lg shadow-black rounded-lg p-4 max-w-s flex items-center gap-4">
                 <FontAwesomeIcon icon={faPaintBrush} className="text-6xl bg-teal-50 rounded-3xl text-slate-400 p-4 dark:bg-blacker dark:text-darkBlack"/>
-                <p className="text-gray-600 dark:text-zinc-600 text-sm flex flex-col">
+                <p className="text-gray-700 dark:text-zinc-400 text-sm flex flex-col">
                 <span className="text-lg font-semibold dark:text-zinc-300 tracking-tight">UI/UX Design</span>
                 User-focused, tailored experiences with intuitive navigation.
                 </p>

@@ -28,9 +28,10 @@ const Toggle = () => {
     >
       <img
         src={Mode}
-        className={`h-8 w-8 transform transition-transform duration-500 ${
+        className={`h-8 w-8 transform transition-transform duration-500  ${
           isDarkMode ? 'rotate-180 invert' : ''
         }`}
+        alt='Dark mode / Light mode toggle icon'
       />
     </button>
   );
