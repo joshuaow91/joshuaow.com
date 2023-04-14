@@ -2,8 +2,8 @@ import { faCss3, faHtml5, faJira, faJsSquare, faNodeJs, faReact } from "@fortawe
 import { faCode } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import Orderly from './assets/orderly.png';
-import Nasa from './assets/nasa.png';
+import Orderly from './assets/orderly.avif';
+import Nasa from './assets/nasa.avif';
 
 const Projects = () => {
   return (
@@ -49,8 +49,8 @@ const Projects = () => {
             </div>
         </div>
 
-          <div className="mb-6 lg:mb-0 lg:w-2/3 inline-flex flex-col items-center p-6 lg:p-8 lg:py-14 lg:pl-20 text-gray-900 bg-teal-500 rounded-lg dark:bg-teal-700">
-            <img src={Orderly} alt="Orderly" className="hover:scale-125 ease-in-out duration-300 rounded-md drop-shadow-2xl shadow-blackest" loading="lazy"/>
+          <div className="mb-6 lg:mb-0 lg:w-2/3 inline-flex flex-col items-center p-6 lg:p-8 lg:py-8 lg:pl-20 text-gray-900 bg-teal-500 rounded-lg dark:bg-teal-700">
+            <img src={Orderly} alt="Orderly" className="hover:scale-125 md:hover:-translate-x-12 ease-in-out duration-300 rounded-md drop-shadow-2xl shadow-blackest" loading="lazy"/>
           </div>
       </div>
 
@@ -85,7 +85,7 @@ const Projects = () => {
         </div>
 
           <div className="mb-6 lg:mb-0 lg:w-2/3 inline-flex flex-col items-center p-6 lg:p-8 lg:py-8 lg:pl-20 text-gray-900 bg-teal-500 rounded-lg dark:bg-teal-700">
-            <img src={Nasa} alt="Orderly" className="hover:scale-125 ease-in-out duration-300 rounded-md drop-shadow-2xl" loading="lazy" />
+            <img src={Nasa} alt="Orderly" className="hover:scale-125 md:hover:-translate-x-12 ease-in-out duration-300 rounded-md drop-shadow-2xl " loading="lazy" />
           </div>
       </div>
 
