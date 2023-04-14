@@ -12,7 +12,7 @@ const Projects = () => {
         PROJECTS
       </h1>
 
-      <div className="relative lg:border-l lg:border-t border-gray-200 dark:border-darkBlack flex flex-col lg:gap-16 p-4 lg:p-0">
+      <div className="relative lg:border-l lg:border-t border-gray-200 dark:border-darkBlack flex flex-col lg:gap-36 p-4 lg:p-0">
         <div className="flex flex-col items-start ">
           <span className="hidden absolute lg:flex items-center justify-center w-7 h-7 bg-teal-500 text-zinc-100 rounded-full -left-3 -top-3 ring-8 ring-teal-100 dark:ring-gray-900 dark:bg-teal-800 dark:text-white">
             <FontAwesomeIcon icon={faCode} />
