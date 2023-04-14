@@ -18,7 +18,7 @@ function App() {
       <div className='flex md:flex-row justify-evenly items-center min-h-screen'> 
         <Hero />
       </div>
-      <div className=''>
+      <div className='mb-10'>
         <Skillsets />
       </div>
       <div className=" md:p-14 mb-10" id='projects-section'>

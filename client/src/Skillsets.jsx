@@ -40,7 +40,7 @@ const Skillsets = () => {
       </div>
 
       <div
-        className="relative flex flex-col rounded-lg m-4 md:m-10 bg-teal-500 dark:bg-teal-800 md:h-96 font-light"
+        className="relative flex flex-col rounded-lg m-4 md:m-10 bg-teal-500 dark:bg-teal-800 lg:h-96 font-light"
         style={{
           backgroundImage: `url(${Bg})`,
           backgroundSize: "contain",
@@ -51,11 +51,11 @@ const Skillsets = () => {
         <div className="md:-translate-y-16">
           <Skills />
         </div>
-        <div className="flex flex-wrap justify-center gap-4 md:gap-14 md:translate-y-12 p-4 md:p-0 ">
+        <div className="flex flex-wrap justify-center gap-4 md:gap-10 lg:gap-16 lg:translate-y-12 p-4 md:p-0 ">
           {stats.map((skill, index) => (
             <ul key={`${skill.name}-${index}`} className="flex flex-col-reverse">
               <li className="text-lg font-bold tracking-tigt text-teal-700 hover:text-teal-400 dark:text-zinc-300 dark:hover:text-zinc-100">
-                <FontAwesomeIcon icon={skill.icon} className="h-24 w-24" />
+                <FontAwesomeIcon icon={skill.icon} className="h-24 w-24 " />
               </li>
             </ul>
           ))}
