@@ -26,6 +26,7 @@ const Navigation = () => {
       <div className="fixed top-4 right-4 z-20">
         <button
           onClick={toggleMenu}
+          aria-label='navigation button'
           className="text-zinc-700 dark:text-zinc-600 hover:text-teal-400 w-12 h-12 flex justify-center items-center rounded-lg outline-none"
         >
           {!isMenuOpen ? (

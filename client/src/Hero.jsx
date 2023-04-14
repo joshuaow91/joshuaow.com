@@ -14,7 +14,7 @@ const Hero = () => {
         <p className="font-light text-sm tracking-wider text-center md:text-left text-zinc-700 dark:text-white max-w-sm mt-8">
                 I specialize in the meticulous design and development of visually appealing applications that prioritize scalability and performance.
             </p>
-        <a href={resumeFile} download="resume.pdf" className='px-4 py-3 mt-6 text-zinc-100 bg-teal-500 rounded-lg font-light text-sm tracking-wide hover:scale-110 ease-in-out duration-300 dark:bg-teal-800 dark:text-white text-center'>
+        <a href={resumeFile} download="resume.pdf" className='px-4 py-3 mt-6 text-teal-900 bg-teal-500 rounded-lg font-light text-sm tracking-wide hover:scale-110 ease-in-out duration-300 dark:bg-teal-800 dark:text-white text-center'>
             Download Resume
         </a>
       </div>
