@@ -6,7 +6,6 @@ import Skillsets from './Skillsets'
 import Projects from './Projects'
 import Contact from './Contact'
 import Footer from './Footer'
-import Skills from './Skills'
 
 
 function App() {
@@ -22,7 +21,7 @@ function App() {
       <div className=''>
         <Skillsets />
       </div>
-      <div className=" md:p-14 p-5 mb-10" id='projects-section'>
+      <div className=" md:p-14 mb-10" id='projects-section'>
         <Projects />
       </div>
       <div className='md:mt-20 '>
