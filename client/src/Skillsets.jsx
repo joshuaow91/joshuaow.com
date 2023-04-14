@@ -72,20 +72,3 @@ const Skillsets = () => {
 };
 
 export default Skillsets;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                  {/* <li className="hidden md:block text-lg text-center text-teal-800 dark:text-zinc-600">
-                    {skill.name}
-                  </li> */}
