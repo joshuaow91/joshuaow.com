@@ -34,12 +34,18 @@ const Projects = () => {
             <FontAwesomeIcon icon={faNodeJs} className="h-8 w-8" />
           </p>
           <div className="flex w-full justify-evenly">
-              <button className=" my-4 p-3 px-8 text-black dark:text-zinc-300 border-4 hover:border-slate-300  text-sm tracking-wider rounded-lg hover:scale-105 ease-in-out duration-300">
+              <a 
+                href="https://orderly.pro/" 
+                target="_blank"
+                className=" my-4 p-3 px-8 text-black dark:text-zinc-300 border-4 hover:border-slate-300  text-sm tracking-wider rounded-lg hover:scale-105 ease-in-out duration-300">
                 Live Demo
-              </button>
-              <button className=" my-4 p-2 px-8 text-black dark:text-zinc-300 border-4 hover:border-slate-300 text-sm tracking-wider rounded-lg hover:scale-105 ease-in-out duration-300">
+              </a>
+              <a 
+                href="https://github.com/joshuaow91/orderly"
+                target="_blank" 
+                className=" my-4 p-2 px-8 text-black dark:text-zinc-300 border-4 hover:border-slate-300 text-sm tracking-wider rounded-lg hover:scale-105 ease-in-out duration-300">
                 GitHub
-              </button>
+              </a>
             </div>
         </div>
 
@@ -63,12 +69,18 @@ const Projects = () => {
             <FontAwesomeIcon icon={faHtml5} className="h-8 w-8" />
           </p>
           <div className="flex w-full justify-evenly">
-              <button className=" my-4 p-3 px-8 text-black dark:text-zinc-300 border-4 hover:border-slate-300  text-sm tracking-wider rounded-lg hover:scale-105 ease-in-out duration-300">
+              <a 
+                href="https://dallas-astronomy-club.netlify.app/"
+                target="_blank" 
+                className=" my-4 p-3 px-8 text-black dark:text-zinc-300 border-4 hover:border-slate-300  text-sm tracking-wider rounded-lg hover:scale-105 ease-in-out duration-300">
                 Live Demo
-              </button>
-              <button className=" my-4 p-2 px-8 text-black dark:text-zinc-300 border-4 hover:border-slate-300 text-sm tracking-wider rounded-lg hover:scale-105 ease-in-out duration-300">
+              </a>
+              <a 
+                href="https://github.com/joshuaow91/DallasAstronomyClub"
+                target="_blank" 
+                className=" my-4 p-2 px-8 text-black dark:text-zinc-300 border-4 hover:border-slate-300 text-sm tracking-wider rounded-lg hover:scale-105 ease-in-out duration-300">
                 GitHub
-              </button>
+              </a>
             </div>
         </div>
 
