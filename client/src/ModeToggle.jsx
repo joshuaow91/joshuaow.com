@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Mode from './assets/mode.png';
+import Mode from '../public/images/mode.png';
 
 const Toggle = () => {
   const [isDarkMode, setIsDarkMode] = useState(

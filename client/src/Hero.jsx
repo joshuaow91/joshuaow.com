@@ -1,6 +1,6 @@
 import React from 'react';
 import About from './About';
-import resumeFile from './assets/01resume.pdf';
+import resumeFile from '../public/images/01resume.pdf';
 
 const Hero = () => {
 
