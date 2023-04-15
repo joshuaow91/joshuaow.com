@@ -10,7 +10,7 @@ const About = () => {
         { icon: faLinkedin, href: 'https://www.linkedin.com/in/JoshuaOwDev' , aria: 'linked in profile link'},
         { icon: faTwitterSquare, href: 'https://www.twitter.com/JoshuaOwDev' , aria: 'twitter profile link'},
         { icon: faGithubSquare, href: 'https://www.github.com/joshuaow91' , aria: 'github profile link'},
-        { icon: faEnvelopeSquare, href: 'mailto:joshuaow@gmail.com' , aria: 'send me an email'},
+        { icon: faEnvelopeSquare, href: 'mailto:joshuaow@gmail.com' , aria: 'send Joshua an email'},
       ]
 
     return (
@@ -21,8 +21,8 @@ const About = () => {
             <ul className="space-x-4 flex">
                 {socials.map((social, index) => (
                 <li key={index}>
-                  <a href={social.href} target="_blank" rel="noopener noreferrer">
-                    <FontAwesomeIcon icon={social.icon} aria-label={social.aria} className="h-8 w-8 text-zinc-400 hover:text-teal-500 dark:text-zinc-600 dark:hover:text-zinc-700" />
+                  <a href={social.href} target="_blank" rel="noopener noreferrer" aria-label={social.aria}>
+                    <FontAwesomeIcon icon={social.icon} className="h-8 w-8 text-zinc-400 hover:text-teal-500 dark:text-zinc-600 dark:hover:text-zinc-700" />
                   </a>
                 </li>
                 ))}
