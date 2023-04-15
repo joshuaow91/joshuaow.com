@@ -1,5 +1,5 @@
 import React from "react";
-import Ai from '../public/images/aiavatar.png';
+import Ai from '../public/images/aiavatar.avif';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithubSquare, faLinkedin, faTwitterSquare } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons';
