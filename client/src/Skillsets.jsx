@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHtml5, faCss3, faJs, faReact, faNodeJs } from "@fortawesome/free-brands-svg-icons";
 import Skills from "./Skills";
-import Bg from './assets/parabg.svg'
+import Bg from '../public/images/parabg.svg'
 
 const Skillsets = () => {
   const [bgPositionY, setBgPositionY] = useState(-200);

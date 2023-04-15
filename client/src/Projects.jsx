@@ -2,8 +2,8 @@ import { faCss3, faHtml5, faJira, faJsSquare, faNodeJs, faReact } from "@fortawe
 import { faCode } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import Orderly from './assets/orderly.avif';
-import Nasa from './assets/nasa.avif';
+import Orderly from '../public/images/orderly.avif';
+import Nasa from '../public/images/nasa.avif';
 
 const Projects = () => {
   return (
