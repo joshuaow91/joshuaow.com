@@ -1,37 +1,72 @@
-import React from 'react'
-import Navigation from './navbar'
-import './index.css'
-import Hero from './Hero'
-import Skillsets from './Skillsets'
-import Projects from './Projects'
-import Contact from './Contact'
-import Footer from './Footer'
-
+import React, { useState } from 'react';
+import Navigation from './navbar';
+import './index.css';
+import Hero from './Hero';
+import Skillsets from './Skillsets';
+import Projects from './Projects';
+import Contact from './Contact';
+import Footer from './Footer';
+import { InView } from 'react-intersection-observer';
 
 function App() {
+  const [heroVisible, setHeroVisible] = useState(false);
+  const [skillsetsVisible, setSkillsetsVisible] = useState(false);
+  const [projectsVisible, setProjectsVisible] = useState(false);
+  const [contactVisible, setContactVisible] = useState(false);
 
   return (
-    <div className='bg-white flex dark:bg-blackest flex-col'>
-      <div className='' id='home'>
-        <Navigation/>
+    <div className="bg-white flex dark:bg-blackest flex-col">
+      <div className="" id="home">
+        <Navigation />
       </div>
-      <div className='flex md:flex-row justify-evenly items-center min-h-screen'> 
+      <InView
+        threshold={0.1}
+        as="div"
+        onChange={(inView) => {
+          setHeroVisible(inView);
+        }}
+        className={`flex md:flex-row justify-evenly items-center min-h-screen fade ${
+          heroVisible ? 'fade-in' : ''
+        }`}
+      >
         <Hero />
-      </div>
-      <div className='mb-10'>
+      </InView>
+      <InView
+        as="div"
+        threshold={0.1}
+        onChange={(inView) => {
+          setSkillsetsVisible(inView);
+        }}
+        className={`mb-10 fade ${skillsetsVisible ? 'fade-in' : ''}`}
+      >
         <Skillsets />
-      </div>
-      <div className=" md:p-14 mb-10" id='projects-section'>
+      </InView>
+      <InView
+        as="div"
+        threshold={0.1}
+        onChange={(inView) => {
+          setProjectsVisible(inView);
+        }}
+        className={`md:p-14 mb-10 fade ${projectsVisible ? 'fade-in' : ''}`}
+        id="projects-section"
+      >
         <Projects />
-      </div>
-      <div className='md:mt-20 '>
+      </InView>
+      <InView
+        as="div"
+        threshold={0.1}
+        onChange={(inView) => {
+          setContactVisible(inView);
+        }}
+        className={`md:mt-20 fade ${contactVisible ? 'fade-in' : ''}`}
+      >
         <Contact />
-      </div>
-      <div className='dark:bg-blacker'>
+      </InView>
+      <div className="dark:bg-blacker">
         <Footer />
       </div>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
