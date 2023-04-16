@@ -19,11 +19,11 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className="fixed w-full top-0 z-10">
-      <div className='fixed top-3 left-3'> 
+    <nav className=" flex justify-between w-full p-4 z-10">
+      <div className=' top-3 left-3'> 
         <Toggle />
       </div>
-      <div className="fixed top-4 right-4 z-20">
+      <div className=" z-20">
         <button
           onClick={toggleMenu}
           aria-label='navigation button'
