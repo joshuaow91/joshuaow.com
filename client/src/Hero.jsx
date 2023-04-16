@@ -5,7 +5,7 @@ import resumeFile from '../public/images/01resume.pdf';
 const Hero = () => {
 
   return (
-    <div className='flex flex-col-reverse md:flex-row gap-4 items-center m-4 mt-20 md:mt-0'>
+    <div className='flex flex-col-reverse md:flex-row gap-4 items-center m-4 mt-0 sm:mt-20 md:mt-0'>
       <About />
       <div className="flex flex-col items-center md:items-start">
         <p className="text-md sm:text-2xl md:text-2xl md:indent-4 text-black font-light tracking-wider dark:text-white">Hello, I'm</p>
