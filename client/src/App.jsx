@@ -62,7 +62,7 @@ function App() {
       >
         <Contact />
       </InView>
-      <div className="dark:bg-blacker">
+      <div className=" bg-zinc-200 dark:bg-blacker">
         <Footer />
       </div>
     </div>

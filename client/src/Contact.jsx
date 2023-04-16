@@ -4,7 +4,7 @@ const Contact = () => {
 
 
     return (
-        <div className="bg-white dark:bg-blacker ">
+        <div className="bg-zinc-200 dark:bg-blacker ">
             <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md ">
             <div className="">
             <h2 className="mb-4 text-6xl tracking-tight font-montserrat font-extrabold text-center text-zinc-700 dark:text-zinc-200 uppercase" id="contact">
