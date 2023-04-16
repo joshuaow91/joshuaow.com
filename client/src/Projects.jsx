@@ -25,7 +25,7 @@ const Projects = () => {
             Orderly.pro
           </h2>
           <p className="mb-4 text-md font-light text-zinc-600 dark:text-gray-400 lg:justify-center flex p-4 indent-3">
-          Orderly is an application that helps businesses automate product orders when their in-stock quantity reaches a target level. Upon placing an order, users receive notifications with the expected arrival dates.
+          Orderly is an application that solves the problems for businesses that run out of stock. Created to help businesses automate product orders when their in-stock quantity reaches a target level. Upon placing an order, users receive notifications with the expected arrival dates.
           </p>
           <p className="mb-2 text-sm font-normal leading-none text-zinc-400 dark:text-gray-500 justify-evenly flex">
             <FontAwesomeIcon icon={faReact} className="h-8 w-8" />
@@ -37,13 +37,13 @@ const Projects = () => {
               <a 
                 href="https://orderly.pro/" 
                 target="_blank"
-                className=" my-4 p-3 px-8 text-black dark:text-zinc-300 border-4 hover:border-slate-300  text-sm tracking-wider rounded-lg hover:scale-105 ease-in-out duration-300">
+                className=" flex items-center my-4 p-3 px-8 text-black dark:text-zinc-300 border-4 hover:border-slate-300  text-sm tracking-wider rounded-lg hover:scale-105 ease-in-out duration-300">
                 Live Demo
               </a>
               <a 
                 href="https://github.com/joshuaow91/orderly"
                 target="_blank" 
-                className=" my-4 p-2 px-8 text-black dark:text-zinc-300 border-4 hover:border-slate-300 text-sm tracking-wider rounded-lg hover:scale-105 ease-in-out duration-300">
+                className="items-center flex my-4 p-2 px-8 text-black dark:text-zinc-300 border-4 hover:border-slate-300 text-sm tracking-wider rounded-lg hover:scale-105 ease-in-out duration-300">
                 GitHub
               </a>
             </div>
@@ -72,13 +72,13 @@ const Projects = () => {
               <a 
                 href="https://dallas-astronomy-club.netlify.app/"
                 target="_blank" 
-                className=" my-4 p-3 px-8 text-black dark:text-zinc-300 border-4 hover:border-slate-300  text-sm tracking-wider rounded-lg hover:scale-105 ease-in-out duration-300">
+                className="flex items-center my-4 p-3 px-8 text-black dark:text-zinc-300 border-4 hover:border-slate-300  text-sm tracking-wider rounded-lg hover:scale-105 ease-in-out duration-300">
                 Live Demo
               </a>
               <a 
                 href="https://github.com/joshuaow91/DallasAstronomyClub"
                 target="_blank" 
-                className=" my-4 p-2 px-8 text-black dark:text-zinc-300 border-4 hover:border-slate-300 text-sm tracking-wider rounded-lg hover:scale-105 ease-in-out duration-300">
+                className="flex items-center my-4 p-2 px-8 text-black dark:text-zinc-300 border-4 hover:border-slate-300 text-sm tracking-wider rounded-lg hover:scale-105 ease-in-out duration-300">
                 GitHub
               </a>
             </div>
