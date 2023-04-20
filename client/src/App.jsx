@@ -49,7 +49,7 @@ function App() {
         onChange={(inView) => {
           setProjectsVisible(inView);
         }}
-        className={`md:p-14 mb-10 fade ${projectsVisible ? 'fade-in' : ''}`}
+        className={`md:p-14 fade ${projectsVisible ? 'fade-in' : ''}`}
         id="projects-section"
       >
         <Projects />
@@ -60,8 +60,7 @@ function App() {
         onChange={(inView) => {
           setClientsVisible(inView);
         }}
-        className={`md:p-14 mb-10 fade ${clientsVisible ? 'fade-in' : ''}`}
-        id="projects-section"
+        className={`md:p-14  fade ${clientsVisible ? 'fade-in' : ''}`}
       >
         <ClientWork />
       </InView>

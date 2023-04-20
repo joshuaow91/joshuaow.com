@@ -19,7 +19,7 @@ const ClientWork = () => {
           </span>
         </div>
 
-      <div className="flex flex-col-reverse  justify-evenly items-center mt-14">
+      <div className="flex flex-col-reverse  justify-evenly items-center lg:mt-14">
         <div className="flex flex-col lg:w-5/6 p-4 bg-white rounded-lg drop-shadow-lg  dark:bg-black -translate-y-16 mx-4 ">
           <h2 className="flex items-center flex-col gap-4 justify-center mb-1 text-4xl font-semibold text-black dark:text-white tracking-tight">
             TTrades.com
