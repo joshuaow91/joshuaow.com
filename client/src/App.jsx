@@ -7,11 +7,13 @@ import Projects from './Projects';
 import Contact from './Contact';
 import Footer from './Footer';
 import { InView } from 'react-intersection-observer';
+import ClientWork from './ClientWork';
 
 function App() {
   const [heroVisible, setHeroVisible] = useState(false);
   const [skillsetsVisible, setSkillsetsVisible] = useState(false);
   const [projectsVisible, setProjectsVisible] = useState(false);
+  const [clientsVisible, setClientsVisible] = useState(false);
   const [contactVisible, setContactVisible] = useState(false);
 
   return (
@@ -25,7 +27,7 @@ function App() {
         onChange={(inView) => {
           setHeroVisible(inView);
         }}
-        className={`flex md:flex-row justify-evenly items-center min-h-screen fade ${
+        className={`flex md:flex-row justify-evenly items-start mt-14 sm:mt-0 mb-5 sm:mb-0 sm:items-center min-h-screen fade ${
           heroVisible ? 'fade-in' : ''
         }`}
       >
@@ -56,13 +58,24 @@ function App() {
         as="div"
         threshold={0.1}
         onChange={(inView) => {
+          setClientsVisible(inView);
+        }}
+        className={`md:p-14 mb-10 fade ${clientsVisible ? 'fade-in' : ''}`}
+        id="projects-section"
+      >
+        <ClientWork />
+      </InView>
+      <InView
+        as="div"
+        threshold={0.1}
+        onChange={(inView) => {
           setContactVisible(inView);
         }}
         className={`md:mt-20 fade ${contactVisible ? 'fade-in' : ''}`}
       >
         <Contact />
       </InView>
-      <div className=" bg-zinc-200 dark:bg-blacker">
+      <div className=" ">
         <Footer />
       </div>
     </div>

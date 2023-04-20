@@ -19,15 +19,15 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className=" flex justify-between w-full p-4 z-10">
-      <div className=' top-3 left-3'> 
+    <nav className=" flex flex-row-reverse items-center justify-between mx-2 z-20 sm:flex">
+      <div className=' '> 
         <Toggle />
       </div>
       <div className=" z-20">
         <button
           onClick={toggleMenu}
           aria-label='navigation button'
-          className="text-zinc-700 dark:text-zinc-600 hover:text-teal-400 w-12 h-12 flex justify-center items-center rounded-lg outline-none"
+          className="text-zinc-700 dark:text-zinc-600 hover:text-teal-400 w-10 h-10 flex justify-center items-center rounded-lg outline-none"
         >
           {!isMenuOpen ? (
             <FontAwesomeIcon icon={faBars} className={`w-6 h-6 transform transition-transform duration-500 ${isMenuOpen ? 'rotate-180' : ''}`} />
@@ -37,8 +37,8 @@ const Navigation = () => {
         </button>
       </div>
 
-      <div className={`fixed right-0 flex -top-16  mt-20 mr-4 max-w-sm text-zinc-700 bg-indigo-50 dark:bg-black dark:text-zinc-300 rounded-lg drop-shadow-lg transform transition-transform duration-500 ${isMenuOpen ? 'scale-100' : 'scale-0'}`}>
-          <div className='flex pr-10'>
+      <div className={`fixed flex items-start top-2 left-2 max-w-sm text-zinc-700 bg-zinc-200 dark:bg-black dark:text-zinc-300 rounded-lg drop-shadow-lg transform transition-transform duration-500 ${isMenuOpen ? 'scale-100' : 'scale-0'}`}>
+          <div className='pl-8'>
             {navLinks.map(([to, label]) => (
               <Link
                 key={to}
@@ -48,7 +48,7 @@ const Navigation = () => {
                 spy={true}
                 offset={-50}
                 href={`#${to}`}
-                className="block py-3 px-4 cursor-pointer lowercase transition duration-200 hover:text-zinc-100 hover:bg-teal-600 first-of-type:rounded-l-lg"
+                className="block py-1 px-4 cursor-pointer lowercase transition duration-200 text-zinc-800 hover:underline "
                 onClick={toggleMenu}
               >
                 {label}
