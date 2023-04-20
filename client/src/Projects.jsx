@@ -12,7 +12,7 @@ const Projects = () => {
         PROJECTS
       </h1>
 
-      <div className="relative lg:border-l lg:border-t border-gray-200 dark:border-darkBlack flex flex-col gap-14 lg:gap-36 p-4 lg:p-0">
+      <div className="relative lg:border-l lg:border-t border-gray-200 dark:border-darkBlack flex flex-col  lg:gap-36 p-4 lg:p-0">
         <div className="flex flex-col items-start ">
           <span className="hidden absolute lg:flex items-center justify-center w-7 h-7 bg-teal-500 text-zinc-100 rounded-full -left-3 -top-3 ring-8 ring-teal-100 dark:ring-zinc-900 dark:bg-teal-800 dark:text-white">
             <FontAwesomeIcon icon={faCode} />
@@ -20,7 +20,7 @@ const Projects = () => {
         </div>
 
       <div className="flex flex-col-reverse lg:flex-row justify-evenly items-center">
-        <div className="flex flex-col lg:w-1/3 p-4 bg-white rounded-lg drop-shadow-lg lg:translate-x-10 mb-10 lg:mb-0 dark:bg-black -translate-y-16 mx-4 lg:mx-0 lg:-translate-y-0">
+        <div className="flex flex-col lg:w-1/3 p-4 bg-white rounded-lg drop-shadow-lg lg:translate-x-10 dark:bg-black -translate-y-16 mx-4 lg:mx-0 lg:-translate-y-0">
           <h2 className="flex items-center flex-col gap-4 justify-center mb-1 text-4xl font-semibold text-black dark:text-white tracking-tight">
             Orderly.pro
           </h2>
@@ -58,8 +58,6 @@ const Projects = () => {
         <div className="flex flex-col lg:w-1/3 p-4 bg-white rounded-lg drop-shadow-lg lg:translate-x-10 dark:bg-black -translate-y-16 mx-4 lg:mx-0 lg:-translate-y-0">
           <h2 className="flex items-center justify-center mb-1 text-2xl font-semibold text-black dark:text-white tracking-tight">
             Dallas Astronomy Club
-            {/* <span className="bg-teal-100 text-zinc-700 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-darkBlack dark:text-neutral-200 ml-3">
-            </span> */}
           </h2>
           <p className="mb-4 text-md font-light text-zinc-600 dark:text-gray-400 lg:justify-center flex p-4 indent-3">
           This project features the NASA Picture of the Day by leveraging the NASA API and is designed with a strong emphasis on delivering a visually appealing and intuitive user experience, utilizing JavaScript, HTML, and CSS.          </p>
