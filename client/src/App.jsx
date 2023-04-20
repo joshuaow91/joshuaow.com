@@ -27,7 +27,7 @@ function App() {
         onChange={(inView) => {
           setHeroVisible(inView);
         }}
-        className={`flex md:flex-row justify-evenly items-start mt-14 sm:mt-0 mb-5 sm:mb-0 sm:items-center min-h-screen fade ${
+        className={`flex md:flex-row justify-evenly items-start mt-14 sm:mt-0 mb-12 sm:mb-0 sm:items-center sm:min-h-screen fade ${
           heroVisible ? 'fade-in' : ''
         }`}
       >
