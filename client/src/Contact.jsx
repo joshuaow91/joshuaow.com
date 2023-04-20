@@ -4,7 +4,7 @@ const Contact = () => {
 
 
     return (
-        <div className="bg-zinc-200 dark:bg-blacker ">
+        <div className="bg-zinc-200 dark:bg-blacker mx-4 md:mx-10 rounded-lg ">
             <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md ">
             <div className="">
             <h2 className="mb-4 text-6xl tracking-tight font-montserrat font-extrabold text-center text-zinc-700 dark:text-zinc-200 uppercase" id="contact">
@@ -16,7 +16,7 @@ const Contact = () => {
             </p>
             </div>
             <div className="">
-            <form action="https://getform.io/f/34e9ede6-3748-4b34-92f2-2bc5b6917711" method="POST" className="space-y-8 bg-teal-500 rounded-lg p-10 dark:bg-teal-700">
+            <form action="https://getform.io/f/34e9ede6-3748-4b34-92f2-2bc5b6917711" method="POST" className="space-y-8 bg-teal-500 rounded p-10 dark:bg-teal-700">
                 <div>
                 <label htmlFor="email" className="block mb-2 text-sm font-medium text-zinc-700 dark:text-gray-300">
                     Your email
@@ -55,7 +55,7 @@ const Contact = () => {
             </div>
             <button
                 type="submit"
-                className="py-2.5 px-6 my-4 text-teal-800  bg-gradient-to-bl from-teal-400 to-teal-500 border-2 border-teal-300 hover:border-teal-200  text-md rounded-lg hover:scale-105 ease-in-out duration-300"
+                className="py-2.5 w-full sm:px-6 my-4 text-zinc-50 text-opacity-90 bg-teal-600 dark:bg-gradient-to-b dark:from-teal-500 dark:to-teal-600  text-md rounded-lg hover:scale-105 ease-in-out duration-300"
             >
                 Send message
                 </button>
