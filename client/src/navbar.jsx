@@ -48,7 +48,7 @@ const Navigation = () => {
                 spy={true}
                 offset={-50}
                 href={`#${to}`}
-                className="block py-1 px-4 cursor-pointer lowercase transition duration-200 text-zinc-800 hover:underline "
+                className="block py-1 px-4 cursor-pointer lowercase transition duration-200 text-zinc-800 dark:text-white hover:underline "
                 onClick={toggleMenu}
               >
                 {label}
