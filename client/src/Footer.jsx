@@ -6,7 +6,7 @@ import { faSquareEnvelope } from '@fortawesome/free-solid-svg-icons';
 const Footer = () => {
 
     return (     
-      <footer className="bg-white text-center sm:rounded-lg drop-shadow-lg sm:my-4 sm:mx-10 dark:bg-blacker ">
+      <footer className="bg-white text-center md:rounded-lg drop-shadow-lg md:my-4 md:mx-10 dark:bg-blacker ">
         <div className=" p-4 flex-col sm:flex-row flex items-center justify-between">
             <span className="text-xs text-zinc-700 sm:text-center dark:text-gray-300">
                 Made by Joshua Ow with <a href="https://react.dev" target="_blank" className="hover:underline">React</a> & <a href="https://tailwindcss.com" target="_blank" className="hover:underline">Tailwind</a>.

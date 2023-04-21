@@ -40,7 +40,7 @@ const Skillsets = () => {
       </div>
 
       <div
-        className="relative flex flex-col sm:rounded-lg my-4 md:m-10 bg-teal-500 dark:bg-teal-800 lg:h-96 font-light"
+        className="relative flex flex-col md:rounded-lg my-4 md:m-10 bg-teal-500 dark:bg-teal-800 lg:h-96 font-light"
         style={{
           backgroundImage: `url(${Bg})`,
           backgroundSize: "contain",

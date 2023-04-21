@@ -61,6 +61,7 @@ function App() {
           setClientsVisible(inView);
         }}
         className={`md:p-14  fade ${clientsVisible ? 'fade-in' : ''}`}
+        id="client"
       >
         <ClientWork />
       </InView>
